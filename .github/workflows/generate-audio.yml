@@ -5,8 +5,7 @@ name: Gerar áudio neural (pt-BR)
 on:
   push:
     branches:
-      - main
-      - feat/narracao-neural
+      - '**'
     paths:
       - 'livros/**/index.html'
       - 'scripts/generate_audio.py'
@@ -71,3 +70,26 @@ jobs:
             git commit -m "chore(audio): atualizar narração neural gerada [skip ci]"
             git push origin "HEAD:${{ github.ref_name }}"
           fi
+
+      # Quando Pages estiver configurado para 'GitHub Actions', publica
+      # no mesmo workflow: pushes feitos por GITHUB_TOKEN não disparam Pages.
+      - name: Preparar site estático com novos MP3s
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+  publish:
+    if: github.ref == 'refs/heads/main'
+    needs: generate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar arquivos estáticos no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
