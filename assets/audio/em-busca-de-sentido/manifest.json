@@ -17,6 +17,90 @@
       "sha256": "e8cc826f94d3f8e774df4ede90f8c039453328c43a82bc47dde7e7918f7b293b"
     },
     {
+      "id": "testemunho",
+      "title": "Como ler o testemunho: um psiquiatra entre os prisioneiros",
+      "file": "testemunho.mp3",
+      "sha256": "073b7f089c1415d4f2d9953ad76f78e49b0e95d15cee063cab3d59b11c4f2c0a"
+    },
+    {
+      "id": "chegada",
+      "title": "Primeira fase: choque, seleção e destruição das certezas",
+      "file": "chegada.mp3",
+      "sha256": "d9047b8e011e4935d9b48be85f734699e2c67f2f78c3a58a237e68eb7b7d569d"
+    },
+    {
+      "id": "apatia",
+      "title": "Segunda fase: apatia, fome, brutalidade e sobrevivência",
+      "file": "apatia.mp3",
+      "sha256": "1c61cd8a499d2964551a147446ccca3cfae3511b9f169e6810108fd95fcdd25e"
+    },
+    {
+      "id": "vida-interior",
+      "title": "Vida interior: imaginação, natureza, arte e transcendência",
+      "file": "vida-interior.mp3",
+      "sha256": "4a11653b5f59209ac3a1129513eb711f961e2cd901aaacf1ca2704c919fcfe1d"
+    },
+    {
+      "id": "amor",
+      "title": "A presença do outro: amor como orientação de sentido",
+      "file": "amor.mp3",
+      "sha256": "717c6c509e67e6f02f798cce66edf5173b64e161f5bc8a90f7d8ac86dc09e0b6"
+    },
+    {
+      "id": "resposta",
+      "title": "Liberdade interior: alcance real e limites da escolha",
+      "file": "resposta.mp3",
+      "sha256": "5d059a0fcef8465cdf97bde26ddc43002f7a7f58ecb8fca75c5a40b09b79ae4a"
+    },
+    {
+      "id": "humor",
+      "title": "Humor, solidariedade e microdecisões éticas",
+      "file": "humor.mp3",
+      "sha256": "fdc62befd8f62a58e3eae8a5ea8ef79ab8e480daf35df3d757adfe822b60405d"
+    },
+    {
+      "id": "futuro",
+      "title": "Futuro, responsabilidade e a pergunta que a vida nos dirige",
+      "file": "futuro.mp3",
+      "sha256": "8da880199d0383a90194e40639871fb3ae0464ce862bac17ff22bbc2689f5b8b"
+    },
+    {
+      "id": "libertacao",
+      "title": "Terceira fase: libertação, estranhamento e desilusão",
+      "file": "libertacao.mp3",
+      "sha256": "b79794782c6309a92f691273983056f2a14b7614e6f609cc933fd7ca99dee2f4"
+    },
+    {
+      "id": "logoterapia",
+      "title": "Logoterapia: vontade de sentido e responsabilidade concreta",
+      "file": "logoterapia.mp3",
+      "sha256": "18ebb270d75f800c16bf4c6966975ce689df4eb67a3802eb8f177e2dd9a14d84"
+    },
+    {
+      "id": "vias",
+      "title": "Três vias do sentido: criar, encontrar e responder",
+      "file": "vias.mp3",
+      "sha256": "330cd824cdaa58f33da25795604ec5a9b1ae4f676e58068dd4bbb61ecef24048"
+    },
+    {
+      "id": "vazio",
+      "title": "Vazio existencial, frustração e sofrimento psicológico",
+      "file": "vazio.mp3",
+      "sha256": "06a8edb9ba6f34e8b566412fdc902580056161fd2e024c3841b3fdb32971babb"
+    },
+    {
+      "id": "tecnicas",
+      "title": "Intenção paradoxal e desreflexão: técnicas e limites",
+      "file": "tecnicas.mp3",
+      "sha256": "d4d32d497dce0516a6e4bfed2930131fa9be78df8b2e24591517054cdac77e43"
+    },
+    {
+      "id": "otimismo",
+      "title": "Otimismo trágico: culpa, dor, morte e possibilidade",
+      "file": "otimismo.mp3",
+      "sha256": "a8ff2352038ca2c9cda66d7eae70cc093ebda0b14a74376ff851a3debed088e2"
+    },
+    {
       "id": "argumentos",
       "title": "Resumo aprofundado dos principais argumentos e ideias",
       "file": "argumentos.mp3",
@@ -48,9 +132,9 @@
     },
     {
       "id": "conexoes",
-      "title": "Conexões com as outras quatro obras",
+      "title": "Conexões com as outras cinco obras",
       "file": "conexoes.mp3",
-      "sha256": "3e6b4d2331f14e34dfead30a5d6a44a6c1fa206889b1b912e5e49144b50eb26f"
+      "sha256": "dc21e1b090bb85f7f5338c82d0a65b7822cb1c4a52a29d438c10b1d13985df33"
     },
     {
       "id": "perguntas",

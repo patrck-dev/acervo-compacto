@@ -4,7 +4,7 @@ Site editorial inteiramente estático, em português brasileiro, com seis ensaio
 
 ## Conteúdo e recursos
 
-- Seis obras em HTML independente. As cinco iniciais têm dez seções e aproximadamente 2.000 a 2.250 palavras; Confissões, de Santo Agostinho, apresenta os treze livros da obra e análises complementares em 21 seções, com mais de 6.000 palavras. Cada leitura inclui oito perguntas profundas e síntese final em cinco ideias.
+- Seis obras em HTML independente. As cinco primeiras obras agora apresentam entre 24 e 31 seções e cerca de 5.500 a 5.700 palavras cada, com percursos aprofundados por capítulos, partes, argumentos, contexto e contrapontos; Confissões, de Santo Agostinho, apresenta os treze livros da obra e análises complementares em 21 seções, com mais de 6.000 palavras. Cada leitura inclui oito perguntas profundas e síntese final em cinco ideias.
 - Capas editoriais originais em SVG, locais; nenhuma imagem precisa de CDN.
 - Tema claro, escuro ou automático; controle de fonte entre 16 e 26 px.
 - Progresso calculado pela posição efetiva na página, persistido individualmente, retomada automática e atalho na biblioteca para a última leitura.
@@ -81,3 +81,9 @@ Na branch de desenvolvimento `feat/narracao-neural`, a biblioteca inclui `livros
 A marca do site é **Acervo Compacto**, com identificador desejado `acervo-compacto`. A alteração de nome no conteúdo não renomeia automaticamente o repositório GitHub nem o Worker conectado ao Cloudflare; essas operações devem ser coordenadas separadamente para preservar as implantações e os links existentes.
 
 O prefixo original de `localStorage` (`biblioteca.existencia.v1.`) foi preservado intencionalmente para manter anotações, preferências e progresso já registrados nos navegadores dos leitores.
+
+## Resumos aprofundados e narração
+
+Os cinco estudos ampliados estão em `livros/em-busca-de-sentido`, `livros/sapiens`, `livros/meditacoes`, `livros/sidarta` e `livros/o-mito-de-sisifo`. Cada página mantém o resumo interpretativo original e acrescenta um roteiro detalhado que percorre estrutura e argumentos da obra, além de fontes complementares. `livros/confissoes/` permanece inalterado.
+
+O workflow neural compara hashes de cada seção e gera novos arquivos para passagens alteradas ou acrescentadas. Durante a geração, o player pode utilizar a síntese nativa do navegador como alternativa. Como cada uma das cinco páginas cresceu, a atualização de suas faixas requer uma execução de síntese substancial.

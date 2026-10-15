@@ -34,7 +34,7 @@ Observação: validações estáticas e via HTTP não substituem testes manuais 
 ## Verificações já executadas nesta entrega — 13/10/2026
 
 - [x] Os seis HTMLs foram solicitados por HTTP e responderam com sucesso; as 45 referências internas de CSS, JavaScript, SVG e navegação foram verificadas também sob `/nome-do-repositorio/`, sem 404.
-- [x] As seis obras têm dez seções, oito questões finais, cinco ideias de síntese, IDs estáveis e conteúdo editorial completo de aproximadamente 2.061 a 2.245 palavras, conforme contagem dos arquivos de origem.
+- [x] As cinco primeiras obras têm agora 24 a 31 seções e cerca de 5.500 a 5.700 palavras; Confissões conserva 21 seções e sua cobertura dos treze livros. Todos os textos mantêm perguntas, síntese, IDs e dados narráveis.
 - [x] Os cinco módulos JavaScript passaram pela verificação sintática do Node usado **apenas no ambiente de teste** (não é dependência do produto).
 - [x] Foram renderizados os HTMLs com estilos e scripts em Chromium no ambiente de teste, inclusive layouts móveis e desktop. Não houve rolagem horizontal não intencional nos tamanhos de 320 a 1440 px inspecionados.
 - [x] Foram exercitados em Chromium: temas, controles reais de fonte, notas, progresso, 100% ao fim, retomada após recarregamento simulado, atalho da última leitura e reinicialização sem apagar notas.
@@ -50,3 +50,11 @@ O Chromium disponível neste ambiente impede a navegação HTTP por uma polític
 - [ ] Conferir que o GitHub Actions gerou `assets/audio/confissoes/manifest.json` com 21 faixas e seus MP3s.
 - [ ] Testar narração neural de Confissões, pausa, avanço de seções, retomada e ausência de 404 de MP3.
 - [ ] Confirmar que os demais cinco livros não tiveram áudios regenerados se seus textos não mudaram.
+
+## Expansão de cinco livros (sem alterar Confissões)
+
+- [ ] Conferir sumários desktop/mobile, âncoras e navegação entre seções em todos os cinco livros ampliados.
+- [ ] Confirmar contagem de palavras e tempo de leitura atualizados nas páginas e no catálogo.
+- [ ] Verificar 24 faixas de Em Busca de Sentido; 31 de Sapiens; 25 de Meditações; 24 de Sidarta; 28 de O Mito de Sísifo.
+- [ ] Conferir áudio neural e fallback temporário de cada obra depois da geração; Confissões continua com 21 faixas inalteradas.
+- [ ] Validar a nova publicação no Cloudflare após o merge.
