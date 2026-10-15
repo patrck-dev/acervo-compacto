@@ -2,7 +2,7 @@
 
 ## Publicação e URLs
 
-- [ ] Abrir o índice via HTTP e acessar diretamente as cinco páginas por suas URLs.
+- [ ] Abrir o índice via HTTP e acessar diretamente as seis páginas por suas URLs.
 - [ ] Recarregar cada URL de livro sem precisar navegar primeiro pela biblioteca.
 - [ ] Publicar numa subrota como `/nome-do-repositorio/` e testar todos os links.
 - [ ] Confirmar ausência de erros 404 para HTML, CSS, JS e SVG.
@@ -34,7 +34,7 @@ Observação: validações estáticas e via HTTP não substituem testes manuais 
 ## Verificações já executadas nesta entrega — 13/10/2026
 
 - [x] Os seis HTMLs foram solicitados por HTTP e responderam com sucesso; as 45 referências internas de CSS, JavaScript, SVG e navegação foram verificadas também sob `/biblioteca-da-existencia/`, sem 404.
-- [x] As cinco obras têm dez seções, oito questões finais, cinco ideias de síntese, IDs estáveis e conteúdo editorial completo de aproximadamente 2.061 a 2.245 palavras, conforme contagem dos arquivos de origem.
+- [x] As seis obras têm dez seções, oito questões finais, cinco ideias de síntese, IDs estáveis e conteúdo editorial completo de aproximadamente 2.061 a 2.245 palavras, conforme contagem dos arquivos de origem.
 - [x] Os cinco módulos JavaScript passaram pela verificação sintática do Node usado **apenas no ambiente de teste** (não é dependência do produto).
 - [x] Foram renderizados os HTMLs com estilos e scripts em Chromium no ambiente de teste, inclusive layouts móveis e desktop. Não houve rolagem horizontal não intencional nos tamanhos de 320 a 1440 px inspecionados.
 - [x] Foram exercitados em Chromium: temas, controles reais de fonte, notas, progresso, 100% ao fim, retomada após recarregamento simulado, atalho da última leitura e reinicialização sem apagar notas.
@@ -42,3 +42,11 @@ Observação: validações estáticas e via HTTP não substituem testes manuais 
 - [ ] **Pendente de teste manual:** saída acústica real, vozes efetivamente instaladas e particularidades de pausa/retomada no Chrome, Safari e Firefox, especialmente em dispositivos móveis.
 
 O Chromium disponível neste ambiente impede a navegação HTTP por uma política administrativa. Assim, o carregamento dos recursos por HTTP e o funcionamento do DOM/JavaScript foram validados separadamente; não se afirma ter executado uma sessão integrada de navegação HTTP em navegador real. A etapa pendente deve ser conferida após publicar no GitHub Pages.
+
+## Ampliação do acervo e novo livro
+
+- [ ] Abrir `livros/confissoes/index.html` diretamente no preview, verificar as 21 seções e seus 13 livros.
+- [ ] Confirmar a capa e o card de Confissões na biblioteca; contador com seis obras.
+- [ ] Conferir que o GitHub Actions gerou `assets/audio/confissoes/manifest.json` com 21 faixas e seus MP3s.
+- [ ] Testar narração neural de Confissões, pausa, avanço de seções, retomada e ausência de 404 de MP3.
+- [ ] Confirmar que os demais cinco livros não tiveram áudios regenerados se seus textos não mudaram.
