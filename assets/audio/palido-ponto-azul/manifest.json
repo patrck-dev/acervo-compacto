@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "engine": "kokoro-v1.0-ptbr-v1",
+  "voice": "pf_dora",
+  "book": "palido-ponto-azul",
+  "sections": [
+    {
+      "id": "contexto",
+      "title": "Introdução: a continuação ética de Cosmos",
+      "file": "contexto.mp3",
+      "sha256": "83060fb5dc7fd8506cb3043611fce64be34c615102d1a9fafc95e4ccaf40de10"
+    },
+    {
+      "id": "fotografia",
+      "title": "A imagem da Terra registrada pela Voyager 1",
+      "file": "fotografia.mp3",
+      "sha256": "4a72d01f7344d34e014b2224f318098c7e140f7d91b30e707969bebaae815390"
+    },
+    {
+      "id": "humildade",
+      "title": "A escala cósmica como antídoto contra arrogância",
+      "file": "humildade.mp3",
+      "sha256": "8374c5fc90dc83385d276f6b9d5d001d604fcc21772b6f3f2032968408212d38"
+    },
+    {
+      "id": "exploracao",
+      "title": "Por que explorar o espaço em primeiro lugar?",
+      "file": "exploracao.mp3",
+      "sha256": "761753876dd7c21c4229fc2895d8709c5d38c18001def732118e6df2cd304cf9"
+    },
+    {
+      "id": "viajantes",
+      "title": "Voyager e as missões como extensão dos sentidos",
+      "file": "viajantes.mp3",
+      "sha256": "05a28f3bcfee701e29a9d8d04926cf6a4b10af62b8aaa67764a92f9e855e31ec"
+    },
+    {
+      "id": "vizinhos",
+      "title": "Os planetas vizinhos como espelhos da Terra",
+      "file": "vizinhos.mp3",
+      "sha256": "71f41cf83ef12dd0a84b14e026fc014fa3b525e53ab69d568e3a2e5ffc0dd7ef"
+    },
+    {
+      "id": "luas",
+      "title": "Luas, gelo e química: ampliar a ideia de mundo habitável",
+      "file": "luas.mp3",
+      "sha256": "d4f660c7f5a93a232b6e62f46d21504f64377059f34bf4ecdac95f2288978a3d"
+    },
+    {
+      "id": "marte",
+      "title": "Marte entre esperança, engenharia e prudência",
+      "file": "marte.mp3",
+      "sha256": "9d540434f6468c9078a060bc30407279899eec3ada96a04fcb7d1e6a4123fb4d"
+    },
+    {
+      "id": "asteroides",
+      "title": "Riscos cósmicos e defesa planetária",
+      "file": "asteroides.mp3",
+      "sha256": "0a7ead00b6017719f1f595441f08ef23663ac96d86ff6c101abc6dada2ab3a84"
+    },
+    {
+      "id": "colonizacao",
+      "title": "Habitar outros mundos: esperança não é álibi",
+      "file": "colonizacao.mp3",
+      "sha256": "bcbc124cd864a2ca3be8b768d9a6ef6b7e142413f6005eec31f065c4a89080d4"
+    },
+    {
+      "id": "terra",
+      "title": "Não existe substituto simples para o nosso planeta",
+      "file": "terra.mp3",
+      "sha256": "1bee2172233827cf14129962940f0f4c2f32f684cfca50fcd07a37a24b643670"
+    },
+    {
+      "id": "politica",
+      "title": "Fronteiras terrestres sob uma perspectiva cósmica",
+      "file": "politica.mp3",
+      "sha256": "b31aa574511c87c530f15e232519099bd814fc725327dc47581e52310dad98ed"
+    },
+    {
+      "id": "ciencia",
+      "title": "Curiosidade disciplinada e recusa do antropocentrismo",
+      "file": "ciencia.mp3",
+      "sha256": "f62bb6b56432356e173498a8e7518462d5b7d7ab8823e063d5d9c69efff70d47"
+    },
+    {
+      "id": "limites",
+      "title": "Limites históricos e críticas à proposta de Sagan",
+      "file": "limites.mp3",
+      "sha256": "eb8e9c992cc91ff8af3ed035c8c6f00d39b1de749ccd5c7f4aaa50ff13ebca39"
+    },
+    {
+      "id": "conexoes",
+      "title": "Diálogo com os demais estudos do acervo",
+      "file": "conexoes.mp3",
+      "sha256": "6fec80233e47f8b295c62aaaf8b5dfea6108a3ec11bd0a6423806e67dcaa42ae"
+    },
+    {
+      "id": "perguntas",
+      "title": "Oito perguntas para reflexão",
+      "file": "perguntas.mp3",
+      "sha256": "43052a8a2567bb5bedd0c513977b7b521382feddd910f946c77b9fd34b059f3f"
+    },
+    {
+      "id": "sintese",
+      "title": "Síntese das cinco ideias centrais",
+      "file": "sintese.mp3",
+      "sha256": "ac30b55e960e5ac54533e04acd19e3372fcafc06706b35a3c165be7452a7311f"
+    }
+  ]
+}
