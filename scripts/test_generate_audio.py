@@ -35,5 +35,35 @@ class AudioGenerationTests(unittest.TestCase):
                 tts.extract_sections(path)
 
 
+    def test_leituras_ampliadas_tem_sumario_e_texto_narravel(self):
+        from bs4 import BeautifulSoup
+
+        expected_minimum = {
+            "em-busca-de-sentido": 24,
+            "sapiens": 31,
+            "meditacoes": 25,
+            "sidarta": 24,
+            "o-mito-de-sisifo": 28,
+        }
+        for slug, minimum in expected_minimum.items():
+            with self.subTest(book=slug):
+                file = tts.ROOT / "livros" / slug / "index.html"
+                soup = BeautifulSoup(file.read_text(encoding="utf-8"), "html.parser")
+                sections = soup.select("section.reading-section[data-chapter]")
+                self.assertGreaterEqual(len(sections), minimum)
+                section_ids = {s.get("id") for s in sections}
+                self.assertEqual(len(section_ids), len(sections))
+                self.assertTrue(all(s.select_one("[data-readable]") for s in sections))
+                toc_lists = soup.select("ol.toc-list")
+                self.assertEqual(len(toc_lists), 2)
+                expected_links = ["#" + s.get("id") for s in sections]
+                for toc in toc_lists:
+                    self.assertEqual([a.get("href") for a in toc.select("a[href]")], expected_links)
+                self.assertIsNotNone(soup.select_one("#audio-player"))
+                readable_ids = [e.get("id") for e in soup.select("[data-readable]")]
+                self.assertEqual(len(readable_ids), len(set(readable_ids)))
+
+
+
 if __name__ == "__main__":
     unittest.main()
