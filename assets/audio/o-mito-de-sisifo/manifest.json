@@ -17,6 +17,114 @@
       "sha256": "854057c1b4e8c289721de0ba4e58deedcce646036d865b009ac491d06a1422aa"
     },
     {
+      "id": "estrutura",
+      "title": "Estrutura do ensaio: raciocínio, figuras humanas, criação e mito",
+      "file": "estrutura.mp3",
+      "sha256": "83c29e69febea06bd868e993a86dfdb7ea35a2eaa925f028b5a30a9537866305"
+    },
+    {
+      "id": "problema",
+      "title": "Primeiro movimento: a questão de continuar vivendo",
+      "file": "problema.mp3",
+      "sha256": "4bd8374bf87caa95b8cd4fa6326efb65478928fe7d5d952a6ba53d60b47ffcc7"
+    },
+    {
+      "id": "muros",
+      "title": "Os muros do absurdo: rotina, estranhamento e mortalidade",
+      "file": "muros.mp3",
+      "sha256": "1d7b4a7852bd1214f3e16ce1609d5ade4f013597e905c828edda66aa5f221ea3"
+    },
+    {
+      "id": "relacao",
+      "title": "O absurdo surge da relação, não de um mundo simplesmente sem valor",
+      "file": "relacao.mp3",
+      "sha256": "2cd053edd49b5210cf52dbe3c508940711bf25b35c5cf002270f7723404102b6"
+    },
+    {
+      "id": "suicidio-filosofico",
+      "title": "O suicídio filosófico: eliminar a pergunta por um salto",
+      "file": "suicidio-filosofico.mp3",
+      "sha256": "48243596fa10a6b5b7956c2e98531862cb3c35c41fc34d4cf62bcebfa6f12c41"
+    },
+    {
+      "id": "filosofos",
+      "title": "Kierkegaard, Chestov e Jaspers: os interlocutores da transcendência",
+      "file": "filosofos.mp3",
+      "sha256": "e364477d93392dd26bd7ada7d7c8cb235e61b0aeb71f2c27b7a3d6b4a6f697ea"
+    },
+    {
+      "id": "husserl",
+      "title": "Husserl e a fenomenologia: descrição versus unidade metafísica",
+      "file": "husserl.mp3",
+      "sha256": "736ea3380dc1a7121880fc4c891fe64f0809ff10b56b8e93dcaea2d8229ed87a"
+    },
+    {
+      "id": "liberdade",
+      "title": "Liberdade absurda: viver sem garantias de salvação",
+      "file": "liberdade.mp3",
+      "sha256": "2c0c7c50b2157dc7579c11a58cc0c6d6328a8569bf9d0e7f967b80a6e3533cca"
+    },
+    {
+      "id": "consequencias",
+      "title": "Revolta, liberdade e paixão: três consequências do absurdo",
+      "file": "consequencias.mp3",
+      "sha256": "4087267f51fc3507e64377e841c4635d4e31d9bc1cfcdb525c17d646cda2201a"
+    },
+    {
+      "id": "donjuan",
+      "title": "Don Juan: multiplicidade amorosa e ambiguidade ética",
+      "file": "donjuan.mp3",
+      "sha256": "8aac0e6c5fc4647e466c76b53841e0235b4481c1879a7d2cbaa2cf6c6705adc9"
+    },
+    {
+      "id": "ator",
+      "title": "O ator: múltiplas vidas no espaço de uma existência",
+      "file": "ator.mp3",
+      "sha256": "db745d7847323d54dfac3110fe9c4b3c785a870aef04d9c84f00caa7aa95c26e"
+    },
+    {
+      "id": "conquistador",
+      "title": "O conquistador: agir na história sem garantia de vitória final",
+      "file": "conquistador.mp3",
+      "sha256": "ef0c8429a5fc1ea96ba8a623c63df2aa3d27fca7c65ef05ea78b482bcddb1649"
+    },
+    {
+      "id": "arte",
+      "title": "Criação absurda: arte, descrição e recusa de explicação total",
+      "file": "arte.mp3",
+      "sha256": "b317d43c937375e394d1b7ed14a1006b56081925903ce00136943b3685c59238"
+    },
+    {
+      "id": "kirilov",
+      "title": "Kirilov e Dostoiévski: o extremo da liberdade como contradição",
+      "file": "kirilov.mp3",
+      "sha256": "0b18b573d06f4e442cfc1db4a19af55685dc144d7ff5b840950b3add8cbb4b40"
+    },
+    {
+      "id": "criacao-efemera",
+      "title": "Criação efêmera: valor sem promessa de imortalidade",
+      "file": "criacao-efemera.mp3",
+      "sha256": "53c40940e82fee8c0fad25b04af3a7830acc517ad47a38946deb893c286d9b3b"
+    },
+    {
+      "id": "sisifo",
+      "title": "Sísifo: a pedra, a descida e a consciência do destino",
+      "file": "sisifo.mp3",
+      "sha256": "1c17d2018862e3de50b8847be434e279ada43f809455da4918039be1c8e630b3"
+    },
+    {
+      "id": "kafka",
+      "title": "Kafka no apêndice: esperança e os limites da interpretação",
+      "file": "kafka.mp3",
+      "sha256": "c0eda422ab91373ad284df9f686e01f4a4238dd1fada00af5b8e21f286d37e6f"
+    },
+    {
+      "id": "critica-posterior",
+      "title": "Da revolta individual à solidariedade: limites do primeiro Camus",
+      "file": "critica-posterior.mp3",
+      "sha256": "13b538db43ed01179e91211cd34c7838fda191da8120bc88ef05dac4a45d8426"
+    },
+    {
       "id": "argumentos",
       "title": "Resumo aprofundado dos principais argumentos e ideias",
       "file": "argumentos.mp3",
@@ -48,9 +156,9 @@
     },
     {
       "id": "conexoes",
-      "title": "Conexões com as outras quatro obras",
+      "title": "Conexões com as outras cinco obras",
       "file": "conexoes.mp3",
-      "sha256": "ac4c4cb87b118c02feb6cc5d93b357622e63a8979a976af9607d1939a4b846cc"
+      "sha256": "00ac99ba093e345e5f203362c0bbe57d63776f43ae297020dac9a5c7d3629b0c"
     },
     {
       "id": "perguntas",
