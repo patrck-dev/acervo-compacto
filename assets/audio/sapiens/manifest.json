@@ -17,6 +17,132 @@
       "sha256": "09908ea3b9ded0c28a85a5386636ee09dd0645f790b1dac0cf86ab53f550c8e1"
     },
     {
+      "id": "especies",
+      "title": "Da insignificância aos humanos: o gênero Homo e sua diversidade",
+      "file": "especies.mp3",
+      "sha256": "b7b7e92e4620106d0154c41748f344e3dac6d86b4d596e3f1adb12f2147bfcc6"
+    },
+    {
+      "id": "cognitiva",
+      "title": "Revolução cognitiva: linguagem, imaginação e cooperação",
+      "file": "cognitiva.mp3",
+      "sha256": "ea39a2db97188234e1af465bf661dd60c813d9536e583b3484683e2d9b4a6d54"
+    },
+    {
+      "id": "ficcoes",
+      "title": "Mitos compartilhados: religião, empresas, direitos e instituições",
+      "file": "ficcoes.mp3",
+      "sha256": "c0a947e18727328831f79c82c49b325735fd3694393ce1ca8d3d870dfaeaf88b"
+    },
+    {
+      "id": "forrageadores",
+      "title": "Caçadores-coletores: diversidade e limites do nosso conhecimento",
+      "file": "forrageadores.mp3",
+      "sha256": "1294c671f2514da59899d6260be66bb8092b86f13c6b16e88e33154b746eac05"
+    },
+    {
+      "id": "extincoes",
+      "title": "Expansões humanas e impacto ecológico",
+      "file": "extincoes.mp3",
+      "sha256": "6c528b2300d0d62175cc9e201a407ac05fb507d4c16cc0e05d3d4a9416758b31"
+    },
+    {
+      "id": "agricultura",
+      "title": "Revolução agrícola: mais produção não significa vida melhor",
+      "file": "agricultura.mp3",
+      "sha256": "6085ebf6950d2cc6655d2cb87d1cb8d1ae837b5c6e909f9e605b1326c1eccfb9"
+    },
+    {
+      "id": "domesticacao",
+      "title": "Animais domesticados, epidemias e desigualdade",
+      "file": "domesticacao.mp3",
+      "sha256": "bfb697fa86a802c0a43a8fdc554f1151dcd38295ffce3be081c16d0b6b857788"
+    },
+    {
+      "id": "piramides",
+      "title": "Ordens imaginadas e o problema da legitimidade",
+      "file": "piramides.mp3",
+      "sha256": "956d77a321626c90bb89f2f9413c9a2eba519e41213a03efcec9f4d27cc069c0"
+    },
+    {
+      "id": "escrita",
+      "title": "Escrita, números e a memória administrativa",
+      "file": "escrita.mp3",
+      "sha256": "df3aa40419c5be10ea93c8f07de8eb4504d77b3ef0700ca871c3c0b83fed020d"
+    },
+    {
+      "id": "hierarquias",
+      "title": "Castas, raça e gênero: como desigualdades se perpetuam",
+      "file": "hierarquias.mp3",
+      "sha256": "2943cc0eba74cbb966de8877aa8eac57cb51a95641c85d102d3395656a10bfc8"
+    },
+    {
+      "id": "unificacao",
+      "title": "A unificação da humanidade: redes cada vez mais amplas",
+      "file": "unificacao.mp3",
+      "sha256": "d5659b784e7493d1cd7382024e803ea9c4766d6c93176c58f3a2155d26228f88"
+    },
+    {
+      "id": "dinheiro",
+      "title": "Dinheiro: confiança, abstração e poder",
+      "file": "dinheiro.mp3",
+      "sha256": "fc37b603875cae983401cdacdcf5d28996bb33e812bde3b22318fceb022285b1"
+    },
+    {
+      "id": "imperios",
+      "title": "Impérios: integração cultural e violência histórica",
+      "file": "imperios.mp3",
+      "sha256": "4099739b30e4f3134dcf72756dff8bf6e78f8078c163aca7d29d8ab43540aa78"
+    },
+    {
+      "id": "religioes",
+      "title": "Religiões universais, ideologias e ordens de significado",
+      "file": "religioes.mp3",
+      "sha256": "ce41851ae6a07025eed84d5b2f2984680f9163eaaf7c7174bd6225fe905c18c7"
+    },
+    {
+      "id": "ciencia",
+      "title": "Revolução científica: reconhecer a ignorância",
+      "file": "ciencia.mp3",
+      "sha256": "0d333229d644e88e19997f8e3805cdebcf1fee2dc3780f3c63f2fac2c1136b7c"
+    },
+    {
+      "id": "colonialismo",
+      "title": "Ciência e império: descobertas, cartografia e conquista",
+      "file": "colonialismo.mp3",
+      "sha256": "919d3d55b91b97d3745f34ddeb0a229305e592368160d457f9aac909ef084ab6"
+    },
+    {
+      "id": "capitalismo",
+      "title": "Capitalismo, crédito e a crença no crescimento",
+      "file": "capitalismo.mp3",
+      "sha256": "9eaf728b19f6ccf80b2ce8d45d3a89aa8705af09a63fbf0d7318289a1c8576b0"
+    },
+    {
+      "id": "industria",
+      "title": "Indústria, energia, consumo e sofrimento animal",
+      "file": "industria.mp3",
+      "sha256": "8eae6b741b21f2edd6152434c02bfde7e51368fe3f279f4e9aeec9120dd372b0"
+    },
+    {
+      "id": "presente",
+      "title": "Mudança permanente, violência e a pergunta pela paz",
+      "file": "presente.mp3",
+      "sha256": "393b639ab8302eaab66a64baa46f0a37169308f98ebc0f349138b2d5b6095856"
+    },
+    {
+      "id": "felicidade",
+      "title": "Felicidade: quem lucrou com o percurso da espécie?",
+      "file": "felicidade.mp3",
+      "sha256": "1c0cf624229a2d90d7ddd0ec49b3fdd37fb5fd8581d4d5b2d7e9b832841438c7"
+    },
+    {
+      "id": "futuro",
+      "title": "O fim de Homo sapiens? Biotecnologia e limites das previsões",
+      "file": "futuro.mp3",
+      "sha256": "dd41f1effde40ef3b3e3f8f708eeaa1cca07365bd8115914a8b09ec1a66f6f0b"
+    },
+    {
       "id": "argumentos",
       "title": "Resumo aprofundado dos principais argumentos e ideias",
       "file": "argumentos.mp3",
@@ -48,9 +174,9 @@
     },
     {
       "id": "conexoes",
-      "title": "Conexões com as outras quatro obras",
+      "title": "Conexões com as outras cinco obras",
       "file": "conexoes.mp3",
-      "sha256": "45daa4fed279a697ebd0749e2ea813b5edb1fd2e00ea1ec944da38f1d43f3e65"
+      "sha256": "9b764e7394425c6a418185c8e425962428f2ea9cc16ddf93f8b62518b022d2d9"
     },
     {
       "id": "perguntas",
