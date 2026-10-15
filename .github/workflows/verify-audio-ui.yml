@@ -44,17 +44,24 @@ jobs:
           script = Path('assets/js/main.js').read_text(encoding='utf-8')
           css = Path('assets/css/styles.css').read_text(encoding='utf-8')
           books = re.findall(r'<article class="book-card" data-book-card="([^"]+)"[\s\S]*?</article>', source)
-          assert len(books) == len(set(books)) == 6, books
-          assert source.count('class="book-cover-link"') == 6
-          assert source.count('class="book-summary"') == 6
-          assert source.count('data-resume-link') == 6
-          assert source.count('role="progressbar"') == 6
+          assert len(books) == len(set(books)) == 8, books
+          assert source.count('class="book-cover-link"') == 8
+          assert source.count('class="book-summary"') == 8
+          assert source.count('data-resume-link') == 8
+          assert source.count('role="progressbar"') == 8
           assert not re.search(r'data-continue-banner', source)
+          assert set(books) == {p.parent.name for p in Path('livros').glob('*/index.html')}
+          for slug in ('meditacoes', 'sidarta', 'em-busca-de-sentido'):
+              assert slug not in books
+              assert not Path('livros', slug, 'index.html').exists()
+          for slug in books:
+              assert Path('assets/images', slug + '.svg').exists()
+              assert ('livros/' + slug + '/index.html') in source
           assert 'getProgress(book.dataset.bookCard)' in script
           assert "querySelector('[data-resume-link]')" in script
           assert 'grid-template-columns:minmax(0,1fr)' in css
           assert 'book-summary p' in css
-          print('Seis livros, uma obra por linha e retomada individual: OK')
+          print('Oito livros, uma obra por linha e retomada individual: OK')
           PY
       - name: Verificar tipografia sans e remoção do campo de notas
         run: |
@@ -71,7 +78,7 @@ jobs:
           assert "notesKey" not in reader
           assert "getProgress(slug)" in reader and "setProgress(slug" in reader
           books = list(Path('livros').glob('*/index.html'))
-          assert len(books) == 6, books
+          assert len(books) == 8, books
           for book in books:
               page = book.read_text(encoding='utf-8')
               assert 'class="reflections"' not in page, book
@@ -81,7 +88,7 @@ jobs:
               assert re.search(r'<section id="[^"]+" class="reading-section" data-chapter', page), book
               assert 'data-readable' in page, book
               assert 'data-reset-progress' in page, book
-          print('Fonte sem serifa e seis livros sem formulário de notas: OK')
+          print('Fonte sem serifa e oito livros sem formulário de notas: OK')
           PY
       - name: Conferir áudio ambiente e entrada do leitor
         run: |

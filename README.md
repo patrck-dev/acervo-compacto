@@ -1,101 +1,67 @@
 # Acervo Compacto
 
-Site editorial inteiramente estático, em português brasileiro, com seis ensaios originais sobre filosofia, existência, psicologia e história. Funciona diretamente no GitHub Pages **sem build, Node.js, npm, banco de dados, autenticação ou backend**.
+Site editorial estático, em português brasileiro, com **oito estudos autorais de livros** sobre cosmologia, existência, história, filosofia e espiritualidade. Não exige build, Node.js, npm, autenticação, banco de dados nem backend.
 
-## Conteúdo e recursos
+## Catálogo atual
 
-- Seis obras em HTML independente. As cinco primeiras obras agora apresentam entre 24 e 31 seções e cerca de 5.500 a 5.700 palavras cada, com percursos aprofundados por capítulos, partes, argumentos, contexto e contrapontos; Confissões, de Santo Agostinho, apresenta os treze livros da obra e análises complementares em 21 seções, com mais de 6.000 palavras. Cada leitura inclui oito perguntas profundas e síntese final em cinco ideias.
-- Capas editoriais originais em SVG, locais; nenhuma imagem precisa de CDN.
-- Tema claro, escuro ou automático; controle de fonte entre 16 e 26 px.
-- Progresso calculado pela posição efetiva na página, persistido individualmente, retomada automática e atalho na biblioteca para a última leitura.
-- Progresso de leitura individual por obra, retomado automaticamente ao reabrir o livro.
-- Narração por Web Speech API: preferência para vozes brasileiras, seleção de voz, velocidade de 0,8 a 1,5×, reprodução da seção atual ou das seções em sequência, pausa, retomada, parada, navegação e destaque do parágrafo.
-- Sumário lateral em desktop, sumário recolhível em telas menores, navegação por teclado e interface responsiva.
+- **Até o Fim do Tempo** — Brian Greene (2020)
+- **The Big Picture** — Sean Carroll (2016)
+- **Cosmos** — Carl Sagan (1980)
+- **Pálido Ponto Azul** — Carl Sagan (1994)
+- **Uma Breve História do Tempo** — Stephen Hawking (1988)
+- **Sapiens** — Yuval Noah Harari (2011)
+- **O Mito de Sísifo** — Albert Camus (1942)
+- **Confissões** — Santo Agostinho (século IV)
 
-## Publicar no GitHub Pages
+As obras *Meditações*, *Sidarta* e *Em Busca de Sentido* foram retiradas do catálogo, juntamente com suas páginas, capas e faixas de áudio associadas.
 
-1. Crie um repositório no GitHub.
-2. Envie os **arquivos deste diretório para a raiz da branch `main`**, mantendo `index.html`, `.nojekyll`, `assets/` e `livros/` em suas posições.
-3. Abra **Settings > Pages**.
-4. Em **Build and deployment**, escolha **Deploy from a branch**.
-5. Selecione a branch **`main`** e a pasta **`/ (root)`**; clique em **Save**.
-6. Acesse a URL publicada pelo Pages: `https://usuario.github.io/nome-do-repositorio/` ou `https://usuario.github.io/`, dependendo do repositório.
-7. Teste a navegação, preferências, retomada da leitura e voz no navegador final.
+## Recursos de leitura
 
-Todos os links para CSS, JavaScript, imagens e páginas são relativos, permitindo publicação em subdiretórios. Os textos já estão embutidos nos cinco HTMLs.
+- Oito páginas independentes em `livros/<slug>/index.html`, com sumário lateral ou recolhível, âncoras, navegação entre seções, questões para reflexão e sínteses finais.
+- Cinco novos estudos sobre cosmologia, com **17 a 18 seções** cada, textos analíticos condensados, referências editoriais e ressalvas sobre teorias controversas ou conhecimentos atualizados após a publicação original; os três estudos anteriores foram preservados.
+- Capas editoriais originais em SVG, servidas localmente, sem uso de capas comerciais de terceiros.
+- Página inicial com **uma obra por linha**, sinopses expandidas, barra de progresso por livro e botão individual de retomada.
+- Preferências de tema claro/escuro/automático e tamanho de leitura entre 16 e 26 px, com fontes sem serifa.
+- Progresso e preferências armazenados no navegador via `localStorage`. Não são sincronizados entre aparelhos e podem desaparecer se os dados locais forem limpos.
+- Narração com síntese nativa do dispositivo como fallback; quando manifestos e faixas neurais estão publicados em `assets/audio/<slug>/`, o player pode utilizá-los.
+- Música ambiente em `assets/music-background.mp3`, com controle de volume independente da narração. Navegadores podem bloquear reprodução automática com som antes da primeira interação.
+- Sem campo de edição “Minhas reflexões”; perguntas editoriais permanecem nos estudos.
 
 ## Estrutura
 
 ```text
 index.html
-.nojekyll
-README.md
-TESTES.md
 assets/
   css/styles.css
-  js/main.js
-  js/reader.js
-  js/speech.js
-  js/storage.js
-  js/navigation.js
-  images/ (5 capas SVG e favicon SVG)
+  js/ (main, reader, storage, audio, speech, navegação e música)
+  images/ (oito capas SVG e favicon)
+  music-background.mp3
+  audio/ (faixas neurais disponíveis e manifests por obra)
 livros/
-  em-busca-de-sentido/index.html
+  ate-o-fim-do-tempo/index.html
+  the-big-picture/index.html
+  cosmos/index.html
+  palido-ponto-azul/index.html
+  uma-breve-historia-do-tempo/index.html
   sapiens/index.html
-  meditacoes/index.html
-  sidarta/index.html
   o-mito-de-sisifo/index.html
   confissoes/index.html
+scripts/
+  generate_audio.py
+  test_generate_audio.py
+.github/workflows/
+  generate-audio.yml
+  verify-audio-ui.yml
 ```
 
-## Teste local (opcional)
+## Publicação e testes
 
-Módulos ES podem ser bloqueados ao abrir HTML diretamente pelo protocolo `file://`. Para testar em HTTP, use um servidor de arquivos estáticos da sua preferência; se já houver Python na máquina, por exemplo:
+O site pode ser servido de uma pasta, inclusive em subrota no GitHub Pages ou Cloudflare. Os caminhos de CSS, JS, SVG e navegação são relativos. Para testar localmente com servidor HTTP, execute `python3 -m http.server 8000` na raiz e acesse `http://localhost:8000/`. Abrir pelo protocolo `file://` pode bloquear módulos ES.
 
-```sh
-python3 -m http.server 8000
-```
+Testes de estrutura e conteúdo narrável: `python -m unittest discover -s scripts -p 'test_*.py' -v` (instale `scripts/requirements-audio.txt` para obter as dependências usadas pelos testes de geração). A rotina `.github/workflows/verify-audio-ui.yml` valida integridade básica do catálogo, tipografia, caminhos, scripts e controles. Checklist manual: [TESTES.md](TESTES.md).
 
-Abra `http://localhost:8000/`. Isso serve apenas para teste local: **não é um backend da aplicação nem requisito de implantação**.
+A geração neural roda em GitHub Actions quando HTMLs mudam. O sistema precisa ser configurado com permissão de escrita e o ambiente de Pages adequado para publicar MP3s. Confira [docs/NARRACAO_NEURAL.md](docs/NARRACAO_NEURAL.md).
 
-## Limitações reais da voz e do armazenamento
+## Critério editorial
 
-A narração utiliza as vozes disponíveis **no navegador/sistema operacional**, sem API paga. O site prioriza `pt-BR` e informa quando essa voz não existir. Em alguns aparelhos, a lista de vozes surge depois do carregamento. Pausar/retomar, executar com outro aplicativo aberto ou continuar com a tela bloqueada dependem do navegador e **não são garantidos**. A fala começa somente após ação explícita. Os textos são divididos em segmentos curtos; não há MP3, duração fictícia ou barra temporal especulativa.
-
-Preferências e progresso são armazenados apenas no `localStorage` **da origem atual e do perfil do navegador**. Eles não sincronizam entre dispositivos. Limpar os dados do site pode apagá-los. Se o armazenamento local estiver bloqueado, o site permite leitura e avisa que os dados não persistirão.
-
-## Autoria dos materiais
-
-Os ensaios são análises editoriais originais; não reproduzem os livros nem traduções extensas. As cinco capas são representações tipográficas vetoriais originais. Os textos incluem contrapontos e distinguem interpretações próprias de teses dos autores. Para estudo acadêmico aprofundado, devem ser confrontados com as obras e pesquisas especializadas.
-
-## Narração neural automática (em desenvolvimento)
-
-A branch `feat/narracao-neural` inclui um gerador de MP3s com Kokoro pt-BR em GitHub Actions e um novo player que usa os áudios quando presentes. **A `main` não foi alterada.** Consulte [docs/NARRACAO_NEURAL.md](docs/NARRACAO_NEURAL.md) antes de habilitar a publicação: no modo `Deploy from a branch`, commits feitos com `GITHUB_TOKEN` não iniciam sozinhos um build do GitHub Pages. A narração por Web Speech API permanece disponível enquanto o áudio neural não existir.
-
-## Nova obra: Confissões (Santo Agostinho)
-
-Na branch de desenvolvimento `feat/narracao-neural`, a biblioteca inclui `livros/confissoes/index.html`, com estudo original dos treze livros, leituras críticas e ferramentas de reflexão. A narração é gerada automaticamente pelo workflow ao detectar mudanças nesse HTML. Cada seção é um MP3; enquanto a geração não termina, o player utiliza a voz nativa do navegador. A voz neural e os manifestos são publicados na mesma branch, e o Cloudflare Workers mantém uma URL de preview independente da produção.
-
-## Identidade editorial e endereços
-
-A marca do site é **Acervo Compacto**, com identificador desejado `acervo-compacto`. A alteração de nome no conteúdo não renomeia automaticamente o repositório GitHub nem o Worker conectado ao Cloudflare; essas operações devem ser coordenadas separadamente para preservar as implantações e os links existentes.
-
-O prefixo original de `localStorage` (`biblioteca.existencia.v1.`) foi preservado intencionalmente para manter preferências e progresso já registrados. As notas salvas anteriormente não são apagadas pela remoção do formulário, mas a interface não permite editá-las.
-
-## Resumos aprofundados e narração
-
-Os cinco estudos ampliados estão em `livros/em-busca-de-sentido`, `livros/sapiens`, `livros/meditacoes`, `livros/sidarta` e `livros/o-mito-de-sisifo`. Cada página mantém o resumo interpretativo original e acrescenta um roteiro detalhado que percorre estrutura e argumentos da obra, além de fontes complementares. `livros/confissoes/` permanece inalterado.
-
-O workflow neural compara hashes de cada seção e gera novos arquivos para passagens alteradas ou acrescentadas. Durante a geração, o player pode utilizar a síntese nativa do navegador como alternativa. Como cada uma das cinco páginas cresceu, a atualização de suas faixas requer uma execução de síntese substancial.
-
-## Música ambiente e amplificação de voz
-
-O arquivo `assets/music-background.mp3` é reproduzido em loop por um miniplayer presente no cabeçalho (flutuante no celular), com mute e volume separados da narração. O volume e o mute são salvos nas preferências locais; a posição da música é retomada ao navegar na mesma aba, quando permitido.
-
-Navegadores podem impedir a reprodução automática com som antes de uma interação. A música tenta começar automaticamente e, caso seja bloqueada, inicia após um clique, toque ou comando de teclado no site. Como as páginas são HTMLs independentes, a troca de livro pode causar breve interrupção na música; a posição é preservada na mesma aba.
-
-Nos livros com MP3 neural, o controle **Volume da voz** vai de 0% a 200%, usando Web Audio API (ganho mais compressor limitador). Valores acima de 100% podem distorcer conforme o volume do arquivo, o dispositivo e o navegador. No fallback Web Speech, o controle vai até 100%, pois o navegador não expõe o fluxo de áudio para amplificação.
-
-## Leitura sem notas e tipografia sem serifa
-
-A interface não exibe mais o formulário **Minhas reflexões**, mas mantém os exercícios e perguntas editoriais ao fim de cada obra. A fonte de leitura, os títulos e as sinopses usam um conjunto de fontes sem serifa do sistema, com espaçamento de linha confortável e sem dependência de fontes externas. Os dados locais de notas antigas não são apagados; progresso, preferências e narração permanecem disponíveis.
+Cada estudo é uma **síntese analítica original**, não tradução, texto completo ou reprodução extensiva das obras. Os resumos são organizados por capítulos ou temas, com atenção a argumentos, conceitos, objeções e implicações. Para conferir nuances, consulte edições legítimas dos livros e fontes científicas atualizadas. O conteúdo tem caráter educativo e não substitui consulta à literatura técnica especializada.

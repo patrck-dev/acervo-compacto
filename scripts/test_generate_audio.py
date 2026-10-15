@@ -39,12 +39,19 @@ class AudioGenerationTests(unittest.TestCase):
         from bs4 import BeautifulSoup
 
         expected_minimum = {
-            "em-busca-de-sentido": 24,
             "sapiens": 31,
-            "meditacoes": 25,
-            "sidarta": 24,
             "o-mito-de-sisifo": 28,
+            "confissoes": 21,
+            "ate-o-fim-do-tempo": 17,
+            "the-big-picture": 17,
+            "cosmos": 18,
+            "palido-ponto-azul": 17,
+            "uma-breve-historia-do-tempo": 17,
         }
+        self.assertEqual(
+            {file.parent.name for file in (tts.ROOT / "livros").glob("*/index.html")},
+            set(expected_minimum),
+        )
         for slug, minimum in expected_minimum.items():
             with self.subTest(book=slug):
                 file = tts.ROOT / "livros" / slug / "index.html"

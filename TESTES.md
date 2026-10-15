@@ -1,81 +1,26 @@
-# Checklist de testes
+# Checklist de validação — catálogo com oito obras
 
-## Publicação e URLs
+## Automatizado pelo repositório
 
-- [ ] Abrir o índice via HTTP e acessar diretamente as seis páginas por suas URLs.
-- [ ] Recarregar cada URL de livro sem precisar navegar primeiro pela biblioteca.
-- [ ] Publicar numa subrota como `/nome-do-repositorio/` e testar todos os links.
-- [ ] Confirmar ausência de erros 404 para HTML, CSS, JS e SVG.
-- [ ] Confirmar que `.nojekyll` está presente e não há etapa de compilação nem backend.
+- [ ] Verificar os oito cards, cada um com capa SVG local, URL própria, sinopse e progresso individual.
+- [ ] Conferir que os oito slugs da index correspondem exatamente a oito páginas em `livros/`.
+- [ ] Verificar ausência de referências às três obras excluídas na index, páginas e testes ativos.
+- [ ] Conferir sumários lateral e móvel, IDs únicos, seções narráveis, referências e síntese de cada livro.
+- [ ] Executar `python -m unittest discover -s scripts -p 'test_*.py' -v` com dependências de áudio instaladas.
+- [ ] Verificar os módulos JS por `node --input-type=module --check` em CI.
 
-## Leitura e persistência
+## Inspeção manual antes e depois de publicar
 
-- [ ] Testar temas claro, escuro e automático em todas as páginas, antes e após reload.
-- [ ] Diminuir/aumentar fonte entre 16 e 26 px, conferindo alteração efetiva na coluna de texto.
-- [ ] Rolar duas obras a posições diferentes, reabrir e confirmar progresso independente.
-- [ ] Reabrir a página sem âncora e confirmar retomada no último bloco salvo.
-- [ ] Abrir página com `#conceitos` e confirmar precedência da âncora explícita.
-- [ ] Voltar ao índice e usar “Continuar leitura”.
-- [ ] Reiniciar o progresso de um livro sem alterar o progresso dos outros cinco.
-- [ ] Confirmar ausência do formulário “Minhas reflexões” nas seis páginas, mantendo as perguntas editoriais de cada obra.
-- [ ] Usar sumário lateral em desktop e recolhível em dispositivo móvel.
+- [ ] Testar as oito URLs diretamente e via index, inclusive sob subcaminho de publicação, sem erros 404.
+- [ ] Verificar cards responsivos em larguras de 320 px, 375 px, 768 px e desktop; uma obra por linha.
+- [ ] Alternar temas, fonte de 16 a 26 px e navegação por teclado.
+- [ ] Avançar duas obras a posições diferentes, recarregar e confirmar retomada individual; reiniciar só um progresso.
+- [ ] Confirmar que não aparece o campo “Minhas reflexões” e que perguntas editoriais continuam presentes.
+- [ ] Verificar narração: seção atual, sequência, pausa, retomada, navegação, voz pt-BR, velocidade e volume.
+- [ ] Validar fallback de síntese nativa nas cinco novas obras enquanto seus manifestos neurais ainda não existirem.
+- [ ] Conferir geração e publicação dos novos MP3s, sem 404, quando o workflow terminar.
+- [ ] Testar áudio de música em loop, mute e volume independente da narração, inclusive com autoplay bloqueado.
+- [ ] Confirmar acessibilidade, foco visível e preferência de movimento reduzido.
+- [ ] Verificar o ambiente público final depois do merge, especialmente o estado do deploy Cloudflare/Pages.
 
-## Narração e acessibilidade
-
-- [ ] Verificar voz `pt-BR` preferida quando disponível, ou aviso caso não haja.
-- [ ] Iniciar por clique, ouvir seção, ouvir em sequência, pausar, continuar, parar, avançar e retroceder.
-- [ ] Testar seleção de voz, velocidades, destaque do trecho e interrupção ao mudar de página.
-- [ ] Testar em 360 px, tablet e desktop, sem rolagem horizontal involuntária.
-- [ ] Verificar foco visível, navegação por teclado, nomes acessíveis e respeito a `prefers-reduced-motion`.
-- [ ] Testar comportamento do áudio em segundo plano/tela bloqueada no **dispositivo alvo**: não há garantia de continuidade.
-
-Observação: validações estáticas e via HTTP não substituem testes manuais do sintetizador de voz no navegador e sistema operacional de destino.
-
-## Verificações já executadas nesta entrega — 13/10/2026
-
-- [x] Os seis HTMLs foram solicitados por HTTP e responderam com sucesso; as 45 referências internas de CSS, JavaScript, SVG e navegação foram verificadas também sob `/nome-do-repositorio/`, sem 404.
-- [x] As cinco primeiras obras têm agora 24 a 31 seções e cerca de 5.500 a 5.700 palavras; Confissões conserva 21 seções e sua cobertura dos treze livros. Todos os textos mantêm perguntas, síntese, IDs e dados narráveis.
-- [x] Os cinco módulos JavaScript passaram pela verificação sintática do Node usado **apenas no ambiente de teste** (não é dependência do produto).
-- [x] Foram renderizados os HTMLs com estilos e scripts em Chromium no ambiente de teste, inclusive layouts móveis e desktop. Não houve rolagem horizontal não intencional nos tamanhos de 320 a 1440 px inspecionados.
-- [x] Foram exercitados em Chromium: temas, controles reais de fonte, notas, progresso, 100% ao fim, retomada após recarregamento simulado, atalho da última leitura e reinicialização sem apagar notas.
-- [x] Foram exercitados com **simulação da Web Speech API**: voz `pt-BR` preferida, reprodução, pausa, retomada, avançar, parar, velocidade alterada e destaque do trecho, sem erros JavaScript observados.
-- [ ] **Pendente de teste manual:** saída acústica real, vozes efetivamente instaladas e particularidades de pausa/retomada no Chrome, Safari e Firefox, especialmente em dispositivos móveis.
-
-O Chromium disponível neste ambiente impede a navegação HTTP por uma política administrativa. Assim, o carregamento dos recursos por HTTP e o funcionamento do DOM/JavaScript foram validados separadamente; não se afirma ter executado uma sessão integrada de navegação HTTP em navegador real. A etapa pendente deve ser conferida após publicar no GitHub Pages.
-
-## Ampliação do acervo e novo livro
-
-- [ ] Abrir `livros/confissoes/index.html` diretamente no preview, verificar as 21 seções e seus 13 livros.
-- [ ] Confirmar a capa e o card de Confissões na biblioteca; contador com seis obras.
-- [ ] Conferir que o GitHub Actions gerou `assets/audio/confissoes/manifest.json` com 21 faixas e seus MP3s.
-- [ ] Testar narração neural de Confissões, pausa, avanço de seções, retomada e ausência de 404 de MP3.
-- [ ] Confirmar que os demais cinco livros não tiveram áudios regenerados se seus textos não mudaram.
-
-## Expansão de cinco livros (sem alterar Confissões)
-
-- [ ] Conferir sumários desktop/mobile, âncoras e navegação entre seções em todos os cinco livros ampliados.
-- [ ] Confirmar contagem de palavras e tempo de leitura atualizados nas páginas e no catálogo.
-- [ ] Verificar 24 faixas de Em Busca de Sentido; 31 de Sapiens; 25 de Meditações; 24 de Sidarta; 28 de O Mito de Sísifo.
-- [ ] Conferir áudio neural e fallback temporário de cada obra depois da geração; Confissões continua com 21 faixas inalteradas.
-- [ ] Validar a nova publicação no Cloudflare após o merge.
-
-## Música ambiente e controle de volume
-
-- [ ] Verificar `assets/music-background.mp3` na URL pública e testar o loop no início e no fim da faixa.
-- [ ] Confirmar que o miniplayer aparece na home e nos seis livros, sem encobrir o player de voz no celular.
-- [ ] Com reprodução automática bloqueada, clicar ou tocar na página e confirmar início da música.
-- [ ] Silenciar/ativar e ajustar o volume, mudar de página, verificar preferências e retomada da posição da música.
-- [ ] Reproduzir voz e música simultaneamente e confirmar controles de volume independentes.
-- [ ] Ajustar volume da voz para 50%, 100%, 150%, 200%; confirmar amplificação de MP3, ausência de clip perceptível e retorno a 100%.
-- [ ] Sem manifesto válido, confirmar fallback Web Speech com volume 0–100% e aplicação aos próximos segmentos.
-- [ ] Verificar os controles com teclado, leitores de tela, tema claro e escuro.
-
-## Revisão geral de tipografia e formulário (atual)
-
-- [ ] Confirmar que a página inicial e as seis páginas dos livros utilizam fonte sem serifa (sistema), inclusive títulos, parágrafos e sumários.
-- [ ] Testar legibilidade nos temas claro/escuro e nos tamanhos de fonte de 16 a 26 px.
-- [ ] Verificar ausência do campo `#personal-notes`, botões de apagar notas e do painel de reflexões em todos os livros.
-- [ ] Conferir progresso individual, retorno à posição salva, funcionamento dos áudios e música ambiente.
-- [ ] Confirmar que as perguntas de reflexão e os textos dos livros não sofreram alterações.
-
-Nota: o registro histórico de testes anteriores com anotações descreve uma funcionalidade removida nesta revisão.
+Observação: validação estática não substitui navegação real em dispositivos nem audição dos MP3s. Há registros históricos de testes de versões anteriores neste repositório; eles não validam automaticamente a nova composição do catálogo.
