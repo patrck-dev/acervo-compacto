@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "engine": "kokoro-v1.0-ptbr-v1",
+  "voice": "pf_dora",
+  "book": "the-big-picture",
+  "sections": [
+    {
+      "id": "contexto",
+      "title": "Introdução e organização em seis partes",
+      "file": "contexto.mp3",
+      "sha256": "fe423aa4ecce8585fd85fc7793a928e853f49a06b96f67d0a5d0e772de0616fd"
+    },
+    {
+      "id": "naturalismo",
+      "title": "Naturalismo poético: um mundo, muitas histórias",
+      "file": "naturalismo.mp3",
+      "sha256": "2ac588e557fa82607f142dd5a9581f25f2de326cea0846202b20b4c54584a99f"
+    },
+    {
+      "id": "cosmos",
+      "title": "Parte I — Cosmos: um Universo que se move sem motor externo",
+      "file": "cosmos.mp3",
+      "sha256": "ba9416ad8e682338cabf01026111660a4aeb7fd022c02b234254eac63f864c71"
+    },
+    {
+      "id": "tempo",
+      "title": "Entropia e a seta do tempo",
+      "file": "tempo.mp3",
+      "sha256": "4d90f96f99b7e09370cfded4982d18cfb00f9d83cafa6df725f4e5a6b9296edc"
+    },
+    {
+      "id": "entendimento",
+      "title": "Parte II — Understanding: crenças proporcionais às evidências",
+      "file": "entendimento.mp3",
+      "sha256": "cd51c06bf60c91a1779ff9e62a499321cf931ff063b134cc9eada0206450b851"
+    },
+    {
+      "id": "emergencia",
+      "title": "Emergência e o nível adequado de explicação",
+      "file": "emergencia.mp3",
+      "sha256": "193c6e66c9e266bf56a6cbc1fa6d6f86e0af221354d37dfbf0bb030596e7bb55"
+    },
+    {
+      "id": "essencia",
+      "title": "Parte III — Essence: o que a física fundamental realmente restringe",
+      "file": "essencia.mp3",
+      "sha256": "02bfc8f08f703ca92ccfaa0afc4b1c85da9c761c037e6484b91d1607b503fee7"
+    },
+    {
+      "id": "complexidade",
+      "title": "Parte IV — Complexity: organização sem um projeto universal",
+      "file": "complexidade.mp3",
+      "sha256": "6cecce48900d3752a041645b6f51b3906acad1d284a110a5a18930871e814b58"
+    },
+    {
+      "id": "vida",
+      "title": "Vida e finalidade funcional",
+      "file": "vida.mp3",
+      "sha256": "4aec3084899ccfc3db317a86247b6bf5525e815eae2f417169d3ca358ab50a74"
+    },
+    {
+      "id": "mente",
+      "title": "Parte V — Thinking: de cérebros à experiência consciente",
+      "file": "mente.mp3",
+      "sha256": "5a37701cbe43fecb50760f8729b5ce1aaeb065156f0bdaa150ee3005ec222659"
+    },
+    {
+      "id": "liberdade",
+      "title": "Livre-arbítrio: deliberar dentro de um mundo causal",
+      "file": "liberdade.mp3",
+      "sha256": "2ebb7fa951d7116ffbc6ec3ede494ac27ce215f47db74c4204c7b250214b7c16"
+    },
+    {
+      "id": "etica",
+      "title": "Parte VI — Caring: de fatos a valores",
+      "file": "etica.mp3",
+      "sha256": "ece950db92f8cf6e9c9877ecf871a4b7eef86173ae039e16826ec20ef6f12f9b"
+    },
+    {
+      "id": "sentido",
+      "title": "Como uma vida pode importar sem missão cósmica",
+      "file": "sentido.mp3",
+      "sha256": "df81f044ff551e8ef3a53dcc4467c6f8a283d5c50dd4da590be93342c708f394"
+    },
+    {
+      "id": "criticas",
+      "title": "Objeções e limites do naturalismo poético",
+      "file": "criticas.mp3",
+      "sha256": "986f98b2666b1219299c004ea08deec6d183d1c54dd3decb31683b1ea886ff44"
+    },
+    {
+      "id": "conexoes",
+      "title": "Conexões com o restante do acervo",
+      "file": "conexoes.mp3",
+      "sha256": "7df63da219efdb71a381295bd7443b3f32d78dff646ea9d530248baa32259dff"
+    },
+    {
+      "id": "perguntas",
+      "title": "Oito perguntas para reflexão",
+      "file": "perguntas.mp3",
+      "sha256": "c214e88680314da9365af8cf1ff044822567d196ae853548988284196395450b"
+    },
+    {
+      "id": "sintese",
+      "title": "Síntese das cinco ideias centrais",
+      "file": "sintese.mp3",
+      "sha256": "452d75b83ca28adab03ee605bc3c416bc1c6339b3b5e4bc852701b724a601e6b"
+    }
+  ]
+}
