@@ -1,6 +1,6 @@
 import { read, write, remove, progressKey, getProgress, setProgress, notesKey } from './storage.js';
 import { initNavigation } from './navigation.js';
-import { initSpeech } from './speech.js';
+import { initNarration } from './audio.js';
 
 export function initReader({ toast }) {
   const slug = document.body.dataset.book;
@@ -96,5 +96,5 @@ export function initReader({ toast }) {
       notes.value = ''; remove(notesKey(slug)); status.textContent = 'Anotações apagadas';
     });
   }
-  initSpeech({ sections, title, toast });
+  initNarration({ sections, title, toast });
 }
