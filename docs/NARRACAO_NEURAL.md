@@ -25,7 +25,7 @@ sintetiza a voz brasileira e cria `assets/audio/<slug>/manifest.json` e
   `kokoro-onnx`, licença do modelo Apache-2.0 e biblioteca MIT.
 - É necessário habilitar GitHub Actions e permitir escrita de `GITHUB_TOKEN`.
   Todos os processos são externos ao site: visitante só baixa HTML, JS, CSS e MP3.
-- O runner público padrão pode levar tempo para gerar as cinco obras. Primeiro
+- O runner público padrão pode levar tempo para gerar as seções novas. Primeiro
   download do modelo é grande; há cache entre execuções quando disponível.
 - A qualidade em português, os nomes próprios, pausas e intensidade emocional
   precisam ser avaliados ouvindo os arquivos reais, antes do merge.
@@ -59,7 +59,7 @@ Para gerar localmente, apenas como alternativa para diagnóstico, instale
 `scripts/requirements-audio.txt`, eSpeak NG e ffmpeg e execute:
 
 ```sh
-python scripts/generate_audio.py --book em-busca-de-sentido
+python scripts/generate_audio.py --book cosmos
 ```
 
 O áudio de cada seção fica em `assets/audio/<slug>/<id>.mp3` e o player

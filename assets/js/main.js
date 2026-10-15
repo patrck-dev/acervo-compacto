@@ -49,7 +49,7 @@ applyTheme(); applyFontSize();
 initBackgroundMusic();
 if (!persistent) {
   const el = document.querySelector('.storage-warning');
-  if (el) { el.classList.add('show'); el.textContent = 'O navegador bloqueou o armazenamento local. Preferências, progresso e notas não permanecerão após fechar a página.'; }
+  if (el) { el.classList.add('show'); el.textContent = 'O navegador bloqueou o armazenamento local. Preferências e progresso não permanecerão após fechar a página.'; }
 }
 
 if (document.body.dataset.page === 'reader') initReader({ toast });
