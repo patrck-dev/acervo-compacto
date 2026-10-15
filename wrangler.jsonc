@@ -1,0 +1,13 @@
+{
+  // Site estático: HTML/CSS/JS são servidos diretamente, sem Worker backend.
+  "name": "biblioteca-da-existencia",
+  "compatibility_date": "2026-10-15",
+  "assets": {
+    "directory": "./"
+  },
+  // Mantém URLs de versão/preview habilitadas.
+  "preview_urls": true,
+  // Worker Previews: a branch de desenvolvimento ganha URL própria.
+  // Sem secrets, variáveis, banco de dados ou serviços de produção.
+  "previews": {}
+}
