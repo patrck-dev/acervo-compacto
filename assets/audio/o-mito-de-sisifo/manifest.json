@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "engine": "kokoro-v1.0-ptbr-v1",
+  "voice": "pf_dora",
+  "book": "o-mito-de-sisifo",
+  "sections": [
+    {
+      "id": "contexto",
+      "title": "Introdução e contexto histórico",
+      "file": "contexto.mp3",
+      "sha256": "64a976dedcbd60dbdac37b85e0f220533df950208e570faa2b538cf80a7ebb94"
+    },
+    {
+      "id": "questao-central",
+      "title": "A questão central da obra",
+      "file": "questao-central.mp3",
+      "sha256": "854057c1b4e8c289721de0ba4e58deedcce646036d865b009ac491d06a1422aa"
+    },
+    {
+      "id": "argumentos",
+      "title": "Resumo aprofundado dos principais argumentos e ideias",
+      "file": "argumentos.mp3",
+      "sha256": "a54a9a458d0698f34fb3549317562d91edc75cdf2ab9406cf04cc3c1c27db2d3"
+    },
+    {
+      "id": "conceitos",
+      "title": "Conceitos filosóficos fundamentais",
+      "file": "conceitos.mp3",
+      "sha256": "4461c1117de76fd5942b7ea15d5ec748a9f1e5735ba8730f3ae419f7a0b5f86d"
+    },
+    {
+      "id": "interpretacao",
+      "title": "Interpretação e implicações sobre a existência humana",
+      "file": "interpretacao.mp3",
+      "sha256": "1a98262011be3286431d112a9fd1ed778f00e005979c9b18aae4ab2f69860ff5"
+    },
+    {
+      "id": "vida-contemporanea",
+      "title": "Exemplos de aplicação à vida contemporânea",
+      "file": "vida-contemporanea.mp3",
+      "sha256": "2c59feacfa1b21513f12e4c23a7f9ad201cd359477e0ae36e4daac5927cc39dc"
+    },
+    {
+      "id": "criticas",
+      "title": "Críticas, limitações e contrapontos",
+      "file": "criticas.mp3",
+      "sha256": "cedae3f260b44b846e71cd02b9633916dcab7b65c2a0a3bbb1dc9c2f1cef441f"
+    },
+    {
+      "id": "conexoes",
+      "title": "Conexões com as outras quatro obras",
+      "file": "conexoes.mp3",
+      "sha256": "ac4c4cb87b118c02feb6cc5d93b357622e63a8979a976af9607d1939a4b846cc"
+    },
+    {
+      "id": "perguntas",
+      "title": "Oito perguntas profundas para reflexão",
+      "file": "perguntas.mp3",
+      "sha256": "0e020c8a5a6a7d3413716c4d3547e7d36a9a97d297ce1d37a4bc93eedffda255"
+    },
+    {
+      "id": "sintese",
+      "title": "Síntese final das cinco ideias mais importantes",
+      "file": "sintese.mp3",
+      "sha256": "5f2b664af275eeb2cfeced73ac6b66c2f455cdafcd323340be14e7ae25e37844"
+    }
+  ]
+}

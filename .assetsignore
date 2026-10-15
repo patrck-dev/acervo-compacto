@@ -1,0 +1,23 @@
+# Publicar somente os arquivos do site. O Wrangler usa a raiz como assets.directory.
+# Arquivos técnicos não devem estar disponíveis por URL.
+.github/
+.git/
+scripts/
+docs/
+node_modules/
+**/node_modules/
+.wrangler/
+.env*
+.dev.vars*
+.assetsignore
+.nojekyll
+wrangler.jsonc
+wrangler.json
+wrangler.toml
+README.md
+TESTES.md
+*.zip
+*.py
+*.pyc
+__pycache__/
+.DS_Store

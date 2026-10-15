@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "engine": "kokoro-v1.0-ptbr-v1",
+  "voice": "pf_dora",
+  "book": "sidarta",
+  "sections": [
+    {
+      "id": "contexto",
+      "title": "Introdução e contexto histórico",
+      "file": "contexto.mp3",
+      "sha256": "636d638ca4f692b4565dc783395ec30a84c6f1bb36ef79617899724d5abe859f"
+    },
+    {
+      "id": "questao-central",
+      "title": "A questão central da obra",
+      "file": "questao-central.mp3",
+      "sha256": "44ab7bf740a2a754d3eb7312121df6bcfd1a50128c9de027d67edcbbf3103454"
+    },
+    {
+      "id": "argumentos",
+      "title": "Resumo aprofundado dos principais argumentos e ideias",
+      "file": "argumentos.mp3",
+      "sha256": "be15cc00cc640ef291878237c4b429f9c386117ace7387dc2318ac9f44f7e076"
+    },
+    {
+      "id": "conceitos",
+      "title": "Conceitos filosóficos fundamentais",
+      "file": "conceitos.mp3",
+      "sha256": "56f8110b18d9ad443f55efcc04b4653ee2931b2f8122fcb162f923b0c1665106"
+    },
+    {
+      "id": "interpretacao",
+      "title": "Interpretação e implicações sobre a existência humana",
+      "file": "interpretacao.mp3",
+      "sha256": "9ce22d04af99a38184cba52d7823c8ac62a0236c28f549d586d4583593ccf821"
+    },
+    {
+      "id": "vida-contemporanea",
+      "title": "Exemplos de aplicação à vida contemporânea",
+      "file": "vida-contemporanea.mp3",
+      "sha256": "4372ea95eb39dc22a83f1f744d49502f88aa1455be4d65655407ffab7603c0f7"
+    },
+    {
+      "id": "criticas",
+      "title": "Críticas, limitações e contrapontos",
+      "file": "criticas.mp3",
+      "sha256": "138f29f699656ac305fa5b6be06b9e9f0cb0e633587ea9f295d55fb9392c112f"
+    },
+    {
+      "id": "conexoes",
+      "title": "Conexões com as outras quatro obras",
+      "file": "conexoes.mp3",
+      "sha256": "e08070d32ec3ce6802fd7d82bd237d386c3c434a3582bba3bb286e3bb8d065d2"
+    },
+    {
+      "id": "perguntas",
+      "title": "Oito perguntas profundas para reflexão",
+      "file": "perguntas.mp3",
+      "sha256": "738c14825cb6ceda2a1a43345a2ec5ff338e8fa3bc91e495135fb503189e949f"
+    },
+    {
+      "id": "sintese",
+      "title": "Síntese final das cinco ideias mais importantes",
+      "file": "sintese.mp3",
+      "sha256": "856a8463910422e08b3313222acb3d15a52380ab746de59898545be9e9fb73fa"
+    }
+  ]
+}

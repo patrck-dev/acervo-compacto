@@ -1,10 +1,10 @@
 # Biblioteca da Existência
 
-Site editorial inteiramente estático, em português brasileiro, com cinco ensaios originais sobre filosofia, existência, psicologia e história. Funciona diretamente no GitHub Pages **sem build, Node.js, npm, banco de dados, autenticação ou backend**.
+Site editorial inteiramente estático, em português brasileiro, com seis ensaios originais sobre filosofia, existência, psicologia e história. Funciona diretamente no GitHub Pages **sem build, Node.js, npm, banco de dados, autenticação ou backend**.
 
 ## Conteúdo e recursos
 
-- Cinco obras com páginas HTML independentes e dez seções cada. Cada texto tem cerca de 2.000 a 2.250 palavras, oito perguntas profundas e síntese final em cinco ideias.
+- Seis obras em HTML independente. As cinco iniciais têm dez seções e aproximadamente 2.000 a 2.250 palavras; Confissões, de Santo Agostinho, apresenta os treze livros da obra e análises complementares em 21 seções, com mais de 6.000 palavras. Cada leitura inclui oito perguntas profundas e síntese final em cinco ideias.
 - Capas editoriais originais em SVG, locais; nenhuma imagem precisa de CDN.
 - Tema claro, escuro ou automático; controle de fonte entre 16 e 26 px.
 - Progresso calculado pela posição efetiva na página, persistido individualmente, retomada automática e atalho na biblioteca para a última leitura.
@@ -45,6 +45,7 @@ livros/
   meditacoes/index.html
   sidarta/index.html
   o-mito-de-sisifo/index.html
+  confissoes/index.html
 ```
 
 ## Teste local (opcional)
@@ -66,3 +67,11 @@ Preferências, progresso e notas são armazenados apenas no `localStorage` **da 
 ## Autoria dos materiais
 
 Os ensaios são análises editoriais originais; não reproduzem os livros nem traduções extensas. As cinco capas são representações tipográficas vetoriais originais. Os textos incluem contrapontos e distinguem interpretações próprias de teses dos autores. Para estudo acadêmico aprofundado, devem ser confrontados com as obras e pesquisas especializadas.
+
+## Narração neural automática (em desenvolvimento)
+
+A branch `feat/narracao-neural` inclui um gerador de MP3s com Kokoro pt-BR em GitHub Actions e um novo player que usa os áudios quando presentes. **A `main` não foi alterada.** Consulte [docs/NARRACAO_NEURAL.md](docs/NARRACAO_NEURAL.md) antes de habilitar a publicação: no modo `Deploy from a branch`, commits feitos com `GITHUB_TOKEN` não iniciam sozinhos um build do GitHub Pages. A narração por Web Speech API permanece disponível enquanto o áudio neural não existir.
+
+## Nova obra: Confissões (Santo Agostinho)
+
+Na branch de desenvolvimento `feat/narracao-neural`, a biblioteca inclui `livros/confissoes/index.html`, com estudo original dos treze livros, leituras críticas e ferramentas de reflexão. A narração é gerada automaticamente pelo workflow ao detectar mudanças nesse HTML. Cada seção é um MP3; enquanto a geração não termina, o player utiliza a voz nativa do navegador. A voz neural e os manifestos são publicados na mesma branch, e o Cloudflare Workers mantém uma URL de preview independente da produção.

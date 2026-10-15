@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "engine": "kokoro-v1.0-ptbr-v1",
+  "voice": "pf_dora",
+  "book": "confissoes",
+  "sections": [
+    {
+      "id": "contexto",
+      "title": "Introdução: o autor, a época e a arquitetura das Confissões",
+      "file": "contexto.mp3",
+      "sha256": "41d39c56f3e82581622d22e9009185648ad635a37be77bc8d88c3364304747e3"
+    },
+    {
+      "id": "livro-1",
+      "title": "Livro I — Infância, linguagem, educação e desejo",
+      "file": "livro-1.mp3",
+      "sha256": "920ae96f86334d17ff3ead406d08c5c2af4253128f5101bc6cd8285eeca3b8bb"
+    },
+    {
+      "id": "livro-2",
+      "title": "Livro II — Adolescência e o furto das peras",
+      "file": "livro-2.mp3",
+      "sha256": "103a0d43ea4d4bd5154f02b0e91cb22d7fe08006cd699af850e2f9f805753093"
+    },
+    {
+      "id": "livro-3",
+      "title": "Livro III — Cartago, teatro, Cícero e o maniqueísmo",
+      "file": "livro-3.mp3",
+      "sha256": "15318f23e238c83397f99cc0e333582089c100c2be32acfd091f218293e90baf"
+    },
+    {
+      "id": "livro-4",
+      "title": "Livro IV — Amor, amizade, luto e a instabilidade dos bens",
+      "file": "livro-4.mp3",
+      "sha256": "0f487038388b5f408781f0a2d7a90371b43ea59123ef2768b823a08518758a0e"
+    },
+    {
+      "id": "livro-5",
+      "title": "Livro V — Fausto, crise do maniqueísmo e viagem para a Itália",
+      "file": "livro-5.mp3",
+      "sha256": "a57f89e2b4c646419dfbce5ca846238a2ee7d2bb8b7517f43ea25239c136e68b"
+    },
+    {
+      "id": "livro-6",
+      "title": "Livro VI — Ambição, ceticismo e vontade dividida",
+      "file": "livro-6.mp3",
+      "sha256": "57a49964a05a6ba658faf369a66afde0ba25ebe5c82b79a14a48bcf38eedb224"
+    },
+    {
+      "id": "livro-7",
+      "title": "Livro VII — Deus, mal, materialidade e os livros platônicos",
+      "file": "livro-7.mp3",
+      "sha256": "68b235c670087f7d694b65fd292fc7d179a517d35612995b127cc8018162f730"
+    },
+    {
+      "id": "livro-8",
+      "title": "Livro VIII — Narrativas de conversão e o jardim de Milão",
+      "file": "livro-8.mp3",
+      "sha256": "3050d6c0dddcbd9c999f8115e33cf3d360ae31f612dbb2d857555ccb4fdeacee"
+    },
+    {
+      "id": "livro-9",
+      "title": "Livro IX — Batismo, vida compartilhada e a morte de Mônica",
+      "file": "livro-9.mp3",
+      "sha256": "e6e89b675f4690095244beaab532dd253aabb2cd051390cc8f40834561830b04"
+    },
+    {
+      "id": "livro-10",
+      "title": "Livro X — Memória, identidade e exame da vida presente",
+      "file": "livro-10.mp3",
+      "sha256": "64a0ee252d210b8740260752c724c50e08982f61c31efd749df9e7d2278b0898"
+    },
+    {
+      "id": "livro-11",
+      "title": "Livro XI — Criação, eternidade e o enigma do tempo",
+      "file": "livro-11.mp3",
+      "sha256": "a187035e5a84623d1fab983ee2d718bbad5a48c1ad9ed69b8ae8c4112ae8dc08"
+    },
+    {
+      "id": "livro-12",
+      "title": "Livro XII — Matéria informe, criação e pluralidade de leituras",
+      "file": "livro-12.mp3",
+      "sha256": "9bff47a0d4ee086158aec94b1c40ab8f13e3f8df9b5b8d7d1843c3c0697bd13d"
+    },
+    {
+      "id": "livro-13",
+      "title": "Livro XIII — A ordem da criação, o amor e o repouso",
+      "file": "livro-13.mp3",
+      "sha256": "68cf630047ada2744934ff0adcdb395adb47ea86899532ea55a94e726a0e5488"
+    },
+    {
+      "id": "conceitos",
+      "title": "Conceitos fundamentais — graça, vontade, mal, amor, verdade",
+      "file": "conceitos.mp3",
+      "sha256": "42e51f9dc4003ab566c8acbfe5633e4317551ecc54262eba335f4f738ea5bf23"
+    },
+    {
+      "id": "interpretacao",
+      "title": "Existência humana — identidade narrativa, desejo e autoconhecimento",
+      "file": "interpretacao.mp3",
+      "sha256": "cd12a552df41bb63906cc87e243068b6f3419f72b44e0657fc9dfdd104d01ffd"
+    },
+    {
+      "id": "aplicacoes",
+      "title": "Aplicações contemporâneas — decisões, hábitos, memória e leitura",
+      "file": "aplicacoes.mp3",
+      "sha256": "ada2eed1dd0b6be5d84625a88056454526e8359f71d29d4d23de816a504a0b38"
+    },
+    {
+      "id": "criticas",
+      "title": "Críticas e limites — sexualidade, culpa, relações e história",
+      "file": "criticas.mp3",
+      "sha256": "534cab66469c95037181539fa52d052472d8cc5dbb4cd1b0223016910290d3e7"
+    },
+    {
+      "id": "conexoes",
+      "title": "Conexões com Frankl, Harari, Marco Aurélio, Hesse e Camus",
+      "file": "conexoes.mp3",
+      "sha256": "9851182359a55c391ad6bba467afdc8ab7404edf97b48ca3a51c41c860f2a6f2"
+    },
+    {
+      "id": "perguntas",
+      "title": "Para continuar pensando — oito perguntas abertas",
+      "file": "perguntas.mp3",
+      "sha256": "31f8a181eacc80da930245000fa09a3956f404714389fbd0e83890c95763e292"
+    },
+    {
+      "id": "sintese",
+      "title": "Síntese final — cinco ideias para compreender Confissões",
+      "file": "sintese.mp3",
+      "sha256": "cea2c81ed54c6ccfff6f050ae77ab1d57f6a0e2a1aef69e1026541554222a44a"
+    }
+  ]
+}
