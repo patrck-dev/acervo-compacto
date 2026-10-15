@@ -1,0 +1,6 @@
+# Dependências do GERADOR, instaladas somente em GitHub Actions (não no site).
+beautifulsoup4>=4.13,<5
+kokoro-onnx==0.6.1
+misaki-fork[en]
+soundfile>=0.13,<1
+numpy>=1.26,<3
