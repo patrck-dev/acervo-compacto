@@ -78,7 +78,7 @@ jobs:
               echo "::endgroup::"
               continue
             fi
-            git commit -m "chore(audio): atualizar narração de $book [skip ci]"
+            git commit -m "chore(audio): atualizar narração de $book"
 
             pushed=false
             for attempt in 1 2 3 4 5; do
