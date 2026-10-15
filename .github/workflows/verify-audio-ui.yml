@@ -9,12 +9,12 @@ on:
       - 'assets/css/**'
       - 'index.html'
       - 'assets/music-background.mp3'
-      - 'index.html'
       - '.github/workflows/verify-audio-ui.yml'
   pull_request:
     paths:
       - 'assets/js/**'
       - 'assets/css/**'
+      - 'index.html'
       - '.github/workflows/verify-audio-ui.yml'
 
 jobs:
@@ -35,7 +35,6 @@ jobs:
       - name: Conferir catálogo e retomada individual
         run: |
           python3 - <<'PY'
-          from html.parser import HTMLParser
           from pathlib import Path
           import re
 
