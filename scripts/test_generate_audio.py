@@ -52,6 +52,17 @@ class AudioGenerationTests(unittest.TestCase):
             {file.parent.name for file in (tts.ROOT / "livros").glob("*/index.html")},
             set(expected_minimum),
         )
+        # Mantém a profundidade mínima dos cinco ensaios novos, em vez de resumos rasos.
+        new_books = {
+            "ate-o-fim-do-tempo", "the-big-picture", "cosmos",
+            "palido-ponto-azul", "uma-breve-historia-do-tempo"
+        }
+        for slug in new_books:
+            file = tts.ROOT / "livros" / slug / "index.html"
+            soup = BeautifulSoup(file.read_text(encoding="utf-8"), "html.parser")
+            readable_text = " ".join(el.get_text(" ", strip=True) for el in soup.select("[data-readable]"))
+            self.assertGreaterEqual(len(readable_text.split()), 3000, slug)
+
         for slug, minimum in expected_minimum.items():
             with self.subTest(book=slug):
                 file = tts.ROOT / "livros" / slug / "index.html"
