@@ -66,3 +66,7 @@ Preferências, progresso e notas são armazenados apenas no `localStorage` **da 
 ## Autoria dos materiais
 
 Os ensaios são análises editoriais originais; não reproduzem os livros nem traduções extensas. As cinco capas são representações tipográficas vetoriais originais. Os textos incluem contrapontos e distinguem interpretações próprias de teses dos autores. Para estudo acadêmico aprofundado, devem ser confrontados com as obras e pesquisas especializadas.
+
+## Narração neural automática (em desenvolvimento)
+
+A branch `feat/narracao-neural` inclui um gerador de MP3s com Kokoro pt-BR em GitHub Actions e um novo player que usa os áudios quando presentes. **A `main` não foi alterada.** Consulte [docs/NARRACAO_NEURAL.md](docs/NARRACAO_NEURAL.md) antes de habilitar a publicação: no modo `Deploy from a branch`, commits feitos com `GITHUB_TOKEN` não iniciam sozinhos um build do GitHub Pages. A narração por Web Speech API permanece disponível enquanto o áudio neural não existir.
