@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "engine": "kokoro-v1.0-ptbr-v1",
+  "voice": "pf_dora",
+  "book": "ate-o-fim-do-tempo",
+  "sections": [
+    {
+      "id": "contexto",
+      "title": "A arquitetura de um livro sobre tudo",
+      "file": "contexto.mp3",
+      "sha256": "6a98dd341a7fdfc0ec6dd572dc8d1d09a0decd33037c095873e239071b1560d5"
+    },
+    {
+      "id": "tese",
+      "title": "A pergunta central: como a matéria chegou a perguntar por si?",
+      "file": "tese.mp3",
+      "sha256": "ced73b25bf91f65ee4b2b5cff63234ffd939d073c34466b5279c77a19cb60986"
+    },
+    {
+      "id": "entropia",
+      "title": "A entropia fornece direção ao tempo",
+      "file": "entropia.mp3",
+      "sha256": "a1e6db6c915bbe10ff00ecf9cf06f15896a200b6a5aec40f5858e267295c39c8"
+    },
+    {
+      "id": "ordem",
+      "title": "Como surge ordem em um Universo que dissipa energia",
+      "file": "ordem.mp3",
+      "sha256": "7e253f49eb24a6b57ca84a6c58d9dc64237681cf4be0151096e67b4e132723c0"
+    },
+    {
+      "id": "origem",
+      "title": "Universo primordial e os limites da cosmologia",
+      "file": "origem.mp3",
+      "sha256": "b5b18f89a345e7e887887aedb682fc89b3088504ece0d47570ff74468543f8d9"
+    },
+    {
+      "id": "estrelas",
+      "title": "O trabalho das estrelas: fabricar condições para a química",
+      "file": "estrelas.mp3",
+      "sha256": "f2f81f8b16a58404f85452a3e434fee04a18939d2033d8e1f0974f9882d25b9d"
+    },
+    {
+      "id": "vida",
+      "title": "Vida: da química à seleção natural",
+      "file": "vida.mp3",
+      "sha256": "f3da413b07e8f5788b0b305cda5c3e31034321227bff6acd93fc7a561cc7dd96"
+    },
+    {
+      "id": "mente",
+      "title": "O cérebro e o problema de uma perspectiva interior",
+      "file": "mente.mp3",
+      "sha256": "5076179cbe9037ce69b4ab4a251e115ee26e9a174bb91e80f9746f3ba26ffc6d"
+    },
+    {
+      "id": "narrativas",
+      "title": "Linguagem e cultura: conservar o que é passageiro",
+      "file": "narrativas.mp3",
+      "sha256": "aa80d11ef64c02c019456ab35244e6dfc214b7fb794d19db8f94b613d5913790"
+    },
+    {
+      "id": "religiao",
+      "title": "Religião e a aspiração à eternidade",
+      "file": "religiao.mp3",
+      "sha256": "c4210c2b31f118313efd969e10a2b3c2ba5af9d81d244f859098c17fceb8a761"
+    },
+    {
+      "id": "arte",
+      "title": "Arte, beleza e conhecimento além da sobrevivência",
+      "file": "arte.mp3",
+      "sha256": "7caa05a85a5a898f24988df1ba1252c642d830ba809575f6b3c4f7c75e3bc716"
+    },
+    {
+      "id": "futuro",
+      "title": "O destino distante: estrelas extintas e energia dispersa",
+      "file": "futuro.mp3",
+      "sha256": "5d73889f7d27ebc181f4b2a869d2565f5853d0bca2e34bce5783cce3d2050b9b"
+    },
+    {
+      "id": "significado",
+      "title": "Finitude não é sinônimo de falta de sentido",
+      "file": "significado.mp3",
+      "sha256": "0a76507d22b1955d1e96be70c3084aec97ced419877e405350996bd72a0df77d"
+    },
+    {
+      "id": "criticas",
+      "title": "O que o livro explica e o que permanece em aberto",
+      "file": "criticas.mp3",
+      "sha256": "fdd65d2cc1d7a0c4433acc00b0e7bd9a20a084b06932c113a3c07fd0f3815f57"
+    },
+    {
+      "id": "conexoes",
+      "title": "Diálogos com os demais livros",
+      "file": "conexoes.mp3",
+      "sha256": "701ed52769c573b7c692a1cb6d2c2108e5b34182230c1979e6d0decb057c08a6"
+    },
+    {
+      "id": "perguntas",
+      "title": "Oito perguntas para reflexão",
+      "file": "perguntas.mp3",
+      "sha256": "341ae58325d00586a476b56af40aae3c48881c8a982d58708eb49f11d74cd750"
+    },
+    {
+      "id": "sintese",
+      "title": "Síntese das cinco ideias centrais",
+      "file": "sintese.mp3",
+      "sha256": "0a33896055facc16b3ad3388cd8d88e2cf98b3c51b109ccced4f5ac7dbc77fbb"
+    }
+  ]
+}
