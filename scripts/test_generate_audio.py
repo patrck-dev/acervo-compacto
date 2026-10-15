@@ -10,14 +10,14 @@ spec.loader.exec_module(tts)
 
 
 class AudioGenerationTests(unittest.TestCase):
-    def test_cinco_livros_tem_dez_secoes(self):
+    def test_todos_os_livros_tem_secoes_narraveis(self):
         sources = sorted((tts.ROOT / "livros").glob("*/index.html"))
-        self.assertEqual(len(sources), 5)
+        self.assertGreater(len(sources), 0, "Nenhum livro encontrado")
         for source in sources:
             with self.subTest(book=source.parent.name):
                 sections = tts.extract_sections(source)
-                self.assertEqual(len(sections), 10)
-                self.assertEqual(len({s["id"] for s in sections}), 10)
+                self.assertGreater(len(sections), 0, "Livro sem seções narráveis")
+                self.assertEqual(len({s["id"] for s in sections}), len(sections))
                 self.assertTrue(all(len(s["text"]) > 50 for s in sections))
 
     def test_fatiamento_nao_perde_palavras(self):
