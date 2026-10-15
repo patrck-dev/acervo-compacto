@@ -17,6 +17,96 @@
       "sha256": "7dcef83bbab7d4a26459e80b545a5eb083d1fbe04b957013bcd1141aa49950e6"
     },
     {
+      "id": "livro-1",
+      "title": "Livro I — Gratidão, mestres e a formação do caráter",
+      "file": "livro-1.mp3",
+      "sha256": "cf2ea79035ddac82c855174cdbdfe2d923173f1860e2a5fd05e1a1cc662c5c36"
+    },
+    {
+      "id": "livro-2",
+      "title": "Livro II — Convivência difícil, mortalidade e disciplina do julgamento",
+      "file": "livro-2.mp3",
+      "sha256": "179aca6a952fb79d40675d92a8ef1e8178ee91ec98d0763ecfe3d7dd2c4f753f"
+    },
+    {
+      "id": "livro-3",
+      "title": "Livro III — A urgência da vida e a atenção ao que importa",
+      "file": "livro-3.mp3",
+      "sha256": "e9de369cacb333096a1908e7f1483ef634a51eb8673a383ac546731bcda942e2"
+    },
+    {
+      "id": "livro-4",
+      "title": "Livro IV — Refúgio interior, transformação e fama passageira",
+      "file": "livro-4.mp3",
+      "sha256": "0ff01b801d7cfb0a098c0e4eeb33f2584999b7d41fb2e857c598a377ec28b9aa"
+    },
+    {
+      "id": "livro-5",
+      "title": "Livro V — Levantar, trabalhar e cumprir o dever humano",
+      "file": "livro-5.mp3",
+      "sha256": "aedd915d21b9555665085cf308e9116f79d7dda226dfcea50fd15c93a8efe030"
+    },
+    {
+      "id": "livro-6",
+      "title": "Livro VI — Cosmópolis, perspectiva do todo e justiça",
+      "file": "livro-6.mp3",
+      "sha256": "c40ad90906da9f7d998700247057f3490cc0531398ee20763b94c010b6ecc3f3"
+    },
+    {
+      "id": "livro-7",
+      "title": "Livro VII — Repetição, impermanência e correção da mente",
+      "file": "livro-7.mp3",
+      "sha256": "990e34fbabd82cf99b9c42ff9371c55434d069ea53e220c7b2c574106693a6ee"
+    },
+    {
+      "id": "livro-8",
+      "title": "Livro VIII — Governo de si, razão e ação sem espetáculo",
+      "file": "livro-8.mp3",
+      "sha256": "0ae785bfdb9d1eac10f0e0a4a0169d6c3e516f49ea1947079eac3af6eff48312"
+    },
+    {
+      "id": "livro-9",
+      "title": "Livro IX — Injustiça, mentira, raiva e responsabilidade social",
+      "file": "livro-9.mp3",
+      "sha256": "6fca9afa8d45c6e73e04ae424ce151a5ed970b4920dcb2441d96bd95cf8b2d77"
+    },
+    {
+      "id": "livro-10",
+      "title": "Livro X — Natureza, destino e fidelidade ao caráter",
+      "file": "livro-10.mp3",
+      "sha256": "1d64b69f2154daaae991a5fa41236975e960706453de9da9a9f14a86a391b881"
+    },
+    {
+      "id": "livro-11",
+      "title": "Livro XI — Racionalidade comum, convivência e linguagem moral",
+      "file": "livro-11.mp3",
+      "sha256": "744307493c1806a89cf23abb3cf07973be5e262f0c1e25ef7f8ed59cdd8f4510"
+    },
+    {
+      "id": "livro-12",
+      "title": "Livro XII — A morte e a decisão de viver corretamente agora",
+      "file": "livro-12.mp3",
+      "sha256": "1e93abcfaaf078ac38ae70a57728a8b13d8312fa9035a33c21fa696a1e28806f"
+    },
+    {
+      "id": "indiferentes",
+      "title": "Virtude, vício e os chamados indiferentes preferíveis",
+      "file": "indiferentes.mp3",
+      "sha256": "181b8d13d45d954a306636fc0d0fd11c8de4483995e05ac98aad75557aa8df2e"
+    },
+    {
+      "id": "disciplinas",
+      "title": "Três disciplinas estoicas: desejo, ação e assentimento",
+      "file": "disciplinas.mp3",
+      "sha256": "070ee9d3f1f5d840be71e383c4c9d107daac3f78737c81a1fd76f03cee92ff35"
+    },
+    {
+      "id": "cosmos",
+      "title": "Providência ou átomos: o fundamento metafísico em debate",
+      "file": "cosmos.mp3",
+      "sha256": "90218c31c8692428ecd3a4145910e5462884c21e588b62de6d72dff6cdec6f08"
+    },
+    {
       "id": "argumentos",
       "title": "Resumo aprofundado dos principais argumentos e ideias",
       "file": "argumentos.mp3",
@@ -48,9 +138,9 @@
     },
     {
       "id": "conexoes",
-      "title": "Conexões com as outras quatro obras",
+      "title": "Conexões com as outras cinco obras",
       "file": "conexoes.mp3",
-      "sha256": "cf828ce532df1d4fd9b8dec03588fdc6a190618d5a2bce43e48a543dd4235dfc"
+      "sha256": "c0b9768601a09f953c44d15151567b5bb87854f1361939c12683a5621e9b4766"
     },
     {
       "id": "perguntas",
