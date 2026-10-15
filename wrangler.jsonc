@@ -1,6 +1,6 @@
 {
   // Site estático: HTML/CSS/JS são servidos diretamente, sem Worker backend.
-  "name": "biblioteca-da-existencia",
+  "name": "acervo-compacto",
   "compatibility_date": "2026-10-15",
   "assets": {
     "directory": "./"
