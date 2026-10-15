@@ -17,6 +17,90 @@
       "sha256": "44ab7bf740a2a754d3eb7312121df6bcfd1a50128c9de027d67edcbbf3103454"
     },
     {
+      "id": "filho-bramane",
+      "title": "Capítulo 1 — O filho do brâmane e a insuficiência dos rituais",
+      "file": "filho-bramane.mp3",
+      "sha256": "b2901f18ee5036fac2883088049d1cbf95e6af4228d45fcbf0a1df44a4eee421"
+    },
+    {
+      "id": "samanas",
+      "title": "Capítulo 2 — Entre os samanas: jejum, disciplina e fuga de si",
+      "file": "samanas.mp3",
+      "sha256": "df5c8f0bee2f474926094053e35307f31eb09e472383e696c9a89bdf179548c7"
+    },
+    {
+      "id": "gotama",
+      "title": "Capítulo 3 — Gotama: o encontro com o Buda e a separação de Govinda",
+      "file": "gotama.mp3",
+      "sha256": "199792f59f909b1f886f654599e0bbce31bb96f2d87b7c9069f2f6706cce291d"
+    },
+    {
+      "id": "despertar",
+      "title": "Capítulo 4 — Despertar: a descoberta do mundo e da individualidade",
+      "file": "despertar.mp3",
+      "sha256": "59303c54a3452bbf0b9bcdb032f1ed1a651ec9d677270d41b3f371f00eac3f2c"
+    },
+    {
+      "id": "kamala",
+      "title": "Capítulo 5 — Kamala: amor, desejo e aprendizagem do corpo",
+      "file": "kamala.mp3",
+      "sha256": "d762261bdbe84d0e0cdf550d1f38f61d0f12c6ac1f9359758f936d9ba633e010"
+    },
+    {
+      "id": "homens-criancas",
+      "title": "Capítulo 6 — Entre as pessoas: negócios, riqueza e distância afetiva",
+      "file": "homens-criancas.mp3",
+      "sha256": "de34ed6d6331f477e4e3f6a6cbb8fd9461325c3aceff7cb96835c552497143e9"
+    },
+    {
+      "id": "samsara",
+      "title": "Capítulo 7 — Samsara: repetição, vício e esgotamento",
+      "file": "samsara.mp3",
+      "sha256": "63fd00151f1f013298a28c6325c7101c0c3eb67537f9d9cadeeb695cbd935b63"
+    },
+    {
+      "id": "rio",
+      "title": "Capítulo 8 — À margem do rio: desespero e recomeço",
+      "file": "rio.mp3",
+      "sha256": "5d470115caf2b366d529287ca0b20a180be2f73a538a0ac91fbf968ea49bc90a"
+    },
+    {
+      "id": "barqueiro",
+      "title": "Capítulo 9 — O barqueiro Vasudeva e o aprendizado da escuta",
+      "file": "barqueiro.mp3",
+      "sha256": "138571a05fe2bafca30d359493785e8e5f459182e1bfd15595a09787e6fb8ed0"
+    },
+    {
+      "id": "filho",
+      "title": "Capítulo 10 — O filho: apego, cuidado e a impotência de proteger",
+      "file": "filho.mp3",
+      "sha256": "7df063ea0aac21ef9bdb9259c6488d767f2b8a80d4c24b8c0c899ad5661fe328"
+    },
+    {
+      "id": "om",
+      "title": "Capítulo 11 — Om: o rio, o tempo e a unidade da experiência",
+      "file": "om.mp3",
+      "sha256": "da2e821ec7a6c1cc53fc8ce886bac2ce5fdd73d5d4ef3e855a19f707b45d8ae8"
+    },
+    {
+      "id": "govinda",
+      "title": "Capítulo 12 — Govinda: conhecimento, sabedoria e o gesto final",
+      "file": "govinda.mp3",
+      "sha256": "f9e6d80449215ea37657c40e8a7a8503fcae7f1dbba9b0ddcbab640bb639d76c"
+    },
+    {
+      "id": "simbolos",
+      "title": "Símbolos estruturantes: rio, pássaro, sorriso e travessia",
+      "file": "simbolos.mp3",
+      "sha256": "acd345af3ecb6ce098caac34833499725dec83b7fbd1a7a685ee23c1d97b0a0b"
+    },
+    {
+      "id": "contextos",
+      "title": "Hesse, imaginário indiano e o risco de confundir ficção com doutrina",
+      "file": "contextos.mp3",
+      "sha256": "319630694bd55e9e15dbbabe891addb48d14df88628808e35a65441039ad71c8"
+    },
+    {
       "id": "argumentos",
       "title": "Resumo aprofundado dos principais argumentos e ideias",
       "file": "argumentos.mp3",
@@ -48,9 +132,9 @@
     },
     {
       "id": "conexoes",
-      "title": "Conexões com as outras quatro obras",
+      "title": "Conexões com as outras cinco obras",
       "file": "conexoes.mp3",
-      "sha256": "e08070d32ec3ce6802fd7d82bd237d386c3c434a3582bba3bb286e3bb8d065d2"
+      "sha256": "6eb9b9ee5faeec6c89a4866a00484e189a4201a29910c81bbe5421436bfced6b"
     },
     {
       "id": "perguntas",
