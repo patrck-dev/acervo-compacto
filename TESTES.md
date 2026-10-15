@@ -58,3 +58,14 @@ O Chromium disponível neste ambiente impede a navegação HTTP por uma polític
 - [ ] Verificar 24 faixas de Em Busca de Sentido; 31 de Sapiens; 25 de Meditações; 24 de Sidarta; 28 de O Mito de Sísifo.
 - [ ] Conferir áudio neural e fallback temporário de cada obra depois da geração; Confissões continua com 21 faixas inalteradas.
 - [ ] Validar a nova publicação no Cloudflare após o merge.
+
+## Música ambiente e controle de volume
+
+- [ ] Verificar `assets/music-background.mp3` na URL pública e testar o loop no início e no fim da faixa.
+- [ ] Confirmar que o miniplayer aparece na home e nos seis livros, sem encobrir o player de voz no celular.
+- [ ] Com reprodução automática bloqueada, clicar ou tocar na página e confirmar início da música.
+- [ ] Silenciar/ativar e ajustar o volume, mudar de página, verificar preferências e retomada da posição da música.
+- [ ] Reproduzir voz e música simultaneamente e confirmar controles de volume independentes.
+- [ ] Ajustar volume da voz para 50%, 100%, 150%, 200%; confirmar amplificação de MP3, ausência de clip perceptível e retorno a 100%.
+- [ ] Sem manifesto válido, confirmar fallback Web Speech com volume 0–100% e aplicação aos próximos segmentos.
+- [ ] Verificar os controles com teclado, leitores de tela, tema claro e escuro.

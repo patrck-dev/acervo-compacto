@@ -1,5 +1,6 @@
 import { persistent, getPreferences, updatePreferences, getProgress, read } from './storage.js';
 import { initReader } from './reader.js';
+import { initBackgroundMusic } from './background-music.js';
 
 const mediaDark = matchMedia('(prefers-color-scheme: dark)');
 const themeButtons = () => document.querySelectorAll('[data-theme-choice]');
@@ -45,6 +46,7 @@ document.querySelectorAll('[data-font-down]').forEach(b => b.addEventListener('c
 document.querySelectorAll('[data-font-up]').forEach(b => b.addEventListener('click', () => adjustFont(2)));
 mediaDark.addEventListener?.('change', applyTheme);
 applyTheme(); applyFontSize();
+initBackgroundMusic();
 if (!persistent) {
   const el = document.querySelector('.storage-warning');
   if (el) { el.classList.add('show'); el.textContent = 'O navegador bloqueou o armazenamento local. Preferências, progresso e notas não permanecerão após fechar a página.'; }

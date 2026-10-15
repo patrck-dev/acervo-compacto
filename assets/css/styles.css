@@ -22,3 +22,27 @@
 .audio-position input[type=range]:disabled{cursor:default;opacity:.45}
 .audio-time{font:500 11px/1.4 var(--ui);color:var(--muted);font-variant-numeric:tabular-nums;min-width:33px;text-align:center}
 body:has(.audio-player.active) .reader-end{padding-bottom:100px}
+
+
+/* Música ambiente: um botão de mute e um slider, acessível em todas as páginas. */
+.music-mini{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:4px;background:var(--paper);padding:5px 9px;max-width:100%;min-height:41px}
+.music-mini-label{font:600 10px/1.2 var(--ui);letter-spacing:.055em;color:var(--muted)}
+.music-mini-mute{display:grid;place-items:center;flex:none;width:29px;height:29px;padding:4px;background:none;border:0;color:var(--text);border-radius:4px}
+.music-mini-mute:hover{background:var(--surface)}
+.music-mini-mute svg{width:19px;height:19px;stroke:currentColor;fill:none}
+.music-icon-sound[hidden],.music-icon-muted[hidden]{display:none}
+.music-mini input[type=range]{width:67px;min-width:0;cursor:pointer;accent-color:var(--accent-strong)}
+.music-mini-value{min-width:30px;font:600 10px/1 var(--ui);color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+/* O ganho de 100 a 200% é disponibilizado somente para faixas MP3 com Web Audio. */
+.narration-volume{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-top:8px;min-height:30px}
+.narration-volume label{font:600 11px/1.3 var(--ui);color:var(--muted)}
+.narration-volume input[type=range]{width:min(240px,45vw);min-width:80px;cursor:pointer;accent-color:var(--accent-strong)}
+.narration-volume output{font:600 11px/1.3 var(--ui);min-width:36px;text-align:right;font-variant-numeric:tabular-nums;color:var(--text)}
+@media(max-width:680px){
+  .music-mini{position:fixed;right:15px;bottom:calc(14px + var(--narration-player-height,0px) + var(--safe-bottom));z-index:45;box-shadow:0 4px 18px #0002;padding:6px 10px}
+  .music-mini-label{display:inline}
+  .music-mini input[type=range]{width:76px}
+  .narration-volume{justify-content:flex-start;flex-wrap:wrap;margin-top:12px}
+  .narration-volume input[type=range]{width:clamp(90px,45vw,220px)}
+  .site-footer{padding-bottom:90px}
+}

@@ -1,5 +1,6 @@
 import { getPreferences, updatePreferences, read, write } from './storage.js';
 import { initSpeech } from './speech.js';
+import { mountNarrationVolume } from './narration-volume.js';
 
 // Player de áudios estáticos por seção; mantém a Web Speech API como fallback.
 export async function initNarration({ sections, title, toast }) {
@@ -82,6 +83,7 @@ export async function initNarration({ sections, title, toast }) {
   total.textContent = '0:00';
   seekRow.append(elapsed, seek, total);
   player.appendChild(seekRow);
+  const narrationVolume = mountNarrationVolume({ player, audio });
 
   function formatTime(seconds) {
     if (!Number.isFinite(seconds)) return '0:00';
@@ -127,6 +129,7 @@ export async function initNarration({ sections, title, toast }) {
     buttons();
   }
   async function attemptPlay(token) {
+    narrationVolume.resumeAudioContext();
     try {
       await audio.play();
       if (token === sequence) message.textContent = '';
