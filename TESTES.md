@@ -16,8 +16,8 @@
 - [ ] Reabrir a página sem âncora e confirmar retomada no último bloco salvo.
 - [ ] Abrir página com `#conceitos` e confirmar precedência da âncora explícita.
 - [ ] Voltar ao índice e usar “Continuar leitura”.
-- [ ] Reiniciar o progresso sem apagar as anotações.
-- [ ] Salvar, editar e apagar anotações; verificar independência por obra e persistência após reload.
+- [ ] Reiniciar o progresso de um livro sem alterar o progresso dos outros cinco.
+- [ ] Confirmar ausência do formulário “Minhas reflexões” nas seis páginas, mantendo as perguntas editoriais de cada obra.
 - [ ] Usar sumário lateral em desktop e recolhível em dispositivo móvel.
 
 ## Narração e acessibilidade
@@ -69,3 +69,13 @@ O Chromium disponível neste ambiente impede a navegação HTTP por uma polític
 - [ ] Ajustar volume da voz para 50%, 100%, 150%, 200%; confirmar amplificação de MP3, ausência de clip perceptível e retorno a 100%.
 - [ ] Sem manifesto válido, confirmar fallback Web Speech com volume 0–100% e aplicação aos próximos segmentos.
 - [ ] Verificar os controles com teclado, leitores de tela, tema claro e escuro.
+
+## Revisão geral de tipografia e formulário (atual)
+
+- [ ] Confirmar que a página inicial e as seis páginas dos livros utilizam fonte sem serifa (sistema), inclusive títulos, parágrafos e sumários.
+- [ ] Testar legibilidade nos temas claro/escuro e nos tamanhos de fonte de 16 a 26 px.
+- [ ] Verificar ausência do campo `#personal-notes`, botões de apagar notas e do painel de reflexões em todos os livros.
+- [ ] Conferir progresso individual, retorno à posição salva, funcionamento dos áudios e música ambiente.
+- [ ] Confirmar que as perguntas de reflexão e os textos dos livros não sofreram alterações.
+
+Nota: o registro histórico de testes anteriores com anotações descreve uma funcionalidade removida nesta revisão.
