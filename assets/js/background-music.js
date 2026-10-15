@@ -10,6 +10,7 @@ export function initBackgroundMusic() {
 
   const preference = getPreferences();
   let volume = clamp(preference.musicVolume ?? 20);
+  let lastAudibleVolume = volume || 20;
   let muted = Boolean(preference.musicMuted);
   const audio = new Audio(new URL('../music-background.mp3', import.meta.url).href);
   audio.loop = true;
@@ -88,14 +89,22 @@ export function initBackgroundMusic() {
   }
 
   muteButton.addEventListener('click', () => {
-    muted = !muted;
-    updatePreferences({ musicMuted: muted });
+    if (muted || volume === 0) {
+      muted = false;
+      if (volume === 0) volume = lastAudibleVolume;
+    } else {
+      muted = true;
+    }
+    updatePreferences({ musicVolume: volume, musicMuted: muted });
     draw();
     tryStart();
   });
   slider.addEventListener('input', () => {
     volume = clamp(slider.value);
-    if (volume > 0 && muted) muted = false;
+    if (volume > 0) {
+      lastAudibleVolume = volume;
+      muted = false;
+    }
     updatePreferences({ musicVolume: volume, musicMuted: muted });
     draw();
     tryStart();

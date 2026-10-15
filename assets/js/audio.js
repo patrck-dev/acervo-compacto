@@ -43,7 +43,6 @@ export async function initNarration({ sections, title, toast }) {
   const message = document.querySelector('[data-voice-message]');
   const titles = sections.map(s => s.querySelector('h2')?.textContent.trim() || s.id);
   const audio = new Audio();
-  const narrationVolume = mountNarrationVolume({ player, audio });
   audio.preload = 'metadata';
   audio.playbackRate = Number(getPreferences().rate) || 1;
   let activeSection = 0;
@@ -84,6 +83,7 @@ export async function initNarration({ sections, title, toast }) {
   total.textContent = '0:00';
   seekRow.append(elapsed, seek, total);
   player.appendChild(seekRow);
+  const narrationVolume = mountNarrationVolume({ player, audio });
 
   function formatTime(seconds) {
     if (!Number.isFinite(seconds)) return '0:00';
