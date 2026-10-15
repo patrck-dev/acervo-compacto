@@ -1,4 +1,4 @@
-import { read, write, remove, progressKey, getProgress, setProgress, notesKey } from './storage.js';
+import { write, remove, progressKey, getProgress, setProgress } from './storage.js';
 import { initNavigation } from './navigation.js';
 import { initNarration } from './audio.js';
 
@@ -73,7 +73,7 @@ export function initReader({ toast }) {
     restored = true; nav.update(); persistPosition();
   }));
   document.querySelector('[data-reset-progress]')?.addEventListener('click', () => {
-    if (!confirm('Reiniciar o progresso de leitura desta obra? Suas anotações serão mantidas.')) return;
+    if (!confirm('Reiniciar o progresso de leitura desta obra?')) return;
     remove(progressKey(slug));
     restored = false;
     try { history.replaceState(null, '', location.pathname + location.search); } catch { /* origens restritas podem impedir edição da URL */ }
@@ -81,20 +81,7 @@ export function initReader({ toast }) {
     meter.style.width = '0%';
     resumeAlert?.classList.remove('show');
     setTimeout(() => { restored = true; }, 250);
-    toast('Progresso reiniciado. Suas anotações foram preservadas.');
+    toast('Progresso reiniciado.');
   });
-  const notes = document.querySelector('[data-notes]');
-  if (notes) {
-    const status = document.querySelector('[data-notes-status]');
-    notes.value = read(notesKey(slug), '');
-    notes.addEventListener('input', () => {
-      const saved = write(notesKey(slug), notes.value);
-      status.textContent = saved ? 'Anotações salvas neste navegador' : 'Anotações temporárias (armazenamento bloqueado)';
-    });
-    document.querySelector('[data-clear-notes]')?.addEventListener('click', () => {
-      if (!notes.value || !confirm('Apagar todas as anotações desta obra?')) return;
-      notes.value = ''; remove(notesKey(slug)); status.textContent = 'Anotações apagadas';
-    });
-  }
   initNarration({ sections, title, toast });
 }

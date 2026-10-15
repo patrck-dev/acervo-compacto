@@ -8,7 +8,7 @@ Site editorial inteiramente estático, em português brasileiro, com seis ensaio
 - Capas editoriais originais em SVG, locais; nenhuma imagem precisa de CDN.
 - Tema claro, escuro ou automático; controle de fonte entre 16 e 26 px.
 - Progresso calculado pela posição efetiva na página, persistido individualmente, retomada automática e atalho na biblioteca para a última leitura.
-- Notas privadas por obra com salvamento automático e função de apagar.
+- Progresso de leitura individual por obra, retomado automaticamente ao reabrir o livro.
 - Narração por Web Speech API: preferência para vozes brasileiras, seleção de voz, velocidade de 0,8 a 1,5×, reprodução da seção atual ou das seções em sequência, pausa, retomada, parada, navegação e destaque do parágrafo.
 - Sumário lateral em desktop, sumário recolhível em telas menores, navegação por teclado e interface responsiva.
 
@@ -20,7 +20,7 @@ Site editorial inteiramente estático, em português brasileiro, com seis ensaio
 4. Em **Build and deployment**, escolha **Deploy from a branch**.
 5. Selecione a branch **`main`** e a pasta **`/ (root)`**; clique em **Save**.
 6. Acesse a URL publicada pelo Pages: `https://usuario.github.io/nome-do-repositorio/` ou `https://usuario.github.io/`, dependendo do repositório.
-7. Teste a navegação, preferências, anotações, retomada e voz no navegador final.
+7. Teste a navegação, preferências, retomada da leitura e voz no navegador final.
 
 Todos os links para CSS, JavaScript, imagens e páginas são relativos, permitindo publicação em subdiretórios. Os textos já estão embutidos nos cinco HTMLs.
 
@@ -62,7 +62,7 @@ Abra `http://localhost:8000/`. Isso serve apenas para teste local: **não é um 
 
 A narração utiliza as vozes disponíveis **no navegador/sistema operacional**, sem API paga. O site prioriza `pt-BR` e informa quando essa voz não existir. Em alguns aparelhos, a lista de vozes surge depois do carregamento. Pausar/retomar, executar com outro aplicativo aberto ou continuar com a tela bloqueada dependem do navegador e **não são garantidos**. A fala começa somente após ação explícita. Os textos são divididos em segmentos curtos; não há MP3, duração fictícia ou barra temporal especulativa.
 
-Preferências, progresso e notas são armazenados apenas no `localStorage` **da origem atual e do perfil do navegador**. Eles não sincronizam entre dispositivos. Limpar os dados do site pode apagá-los. Se o armazenamento local estiver bloqueado, o site permite leitura e avisa que os dados não persistirão.
+Preferências e progresso são armazenados apenas no `localStorage` **da origem atual e do perfil do navegador**. Eles não sincronizam entre dispositivos. Limpar os dados do site pode apagá-los. Se o armazenamento local estiver bloqueado, o site permite leitura e avisa que os dados não persistirão.
 
 ## Autoria dos materiais
 
@@ -80,7 +80,7 @@ Na branch de desenvolvimento `feat/narracao-neural`, a biblioteca inclui `livros
 
 A marca do site é **Acervo Compacto**, com identificador desejado `acervo-compacto`. A alteração de nome no conteúdo não renomeia automaticamente o repositório GitHub nem o Worker conectado ao Cloudflare; essas operações devem ser coordenadas separadamente para preservar as implantações e os links existentes.
 
-O prefixo original de `localStorage` (`biblioteca.existencia.v1.`) foi preservado intencionalmente para manter anotações, preferências e progresso já registrados nos navegadores dos leitores.
+O prefixo original de `localStorage` (`biblioteca.existencia.v1.`) foi preservado intencionalmente para manter preferências e progresso já registrados. As notas salvas anteriormente não são apagadas pela remoção do formulário, mas a interface não permite editá-las.
 
 ## Resumos aprofundados e narração
 
@@ -95,3 +95,7 @@ O arquivo `assets/music-background.mp3` é reproduzido em loop por um miniplayer
 Navegadores podem impedir a reprodução automática com som antes de uma interação. A música tenta começar automaticamente e, caso seja bloqueada, inicia após um clique, toque ou comando de teclado no site. Como as páginas são HTMLs independentes, a troca de livro pode causar breve interrupção na música; a posição é preservada na mesma aba.
 
 Nos livros com MP3 neural, o controle **Volume da voz** vai de 0% a 200%, usando Web Audio API (ganho mais compressor limitador). Valores acima de 100% podem distorcer conforme o volume do arquivo, o dispositivo e o navegador. No fallback Web Speech, o controle vai até 100%, pois o navegador não expõe o fluxo de áudio para amplificação.
+
+## Leitura sem notas e tipografia sem serifa
+
+A interface não exibe mais o formulário **Minhas reflexões**, mas mantém os exercícios e perguntas editoriais ao fim de cada obra. A fonte de leitura, os títulos e as sinopses usam um conjunto de fontes sem serifa do sistema, com espaçamento de linha confortável e sem dependência de fontes externas. Os dados locais de notas antigas não são apagados; progresso, preferências e narração permanecem disponíveis.

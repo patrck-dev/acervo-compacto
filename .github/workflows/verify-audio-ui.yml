@@ -8,6 +8,7 @@ on:
       - 'assets/js/**'
       - 'assets/css/**'
       - 'index.html'
+      - 'livros/**/index.html'
       - 'assets/music-background.mp3'
       - '.github/workflows/verify-audio-ui.yml'
   pull_request:
@@ -15,6 +16,7 @@ on:
       - 'assets/js/**'
       - 'assets/css/**'
       - 'index.html'
+      - 'livros/**/index.html'
       - '.github/workflows/verify-audio-ui.yml'
 
 jobs:
@@ -53,6 +55,33 @@ jobs:
           assert 'grid-template-columns:minmax(0,1fr)' in css
           assert 'book-summary p' in css
           print('Seis livros, uma obra por linha e retomada individual: OK')
+          PY
+      - name: Verificar tipografia sans e remoção do campo de notas
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          css = Path('assets/css/styles.css').read_text(encoding='utf-8')
+          reader = Path('assets/js/reader.js').read_text(encoding='utf-8')
+          assert '--reading-font:var(--ui)' in css
+          assert "system-ui" in css
+          assert 'var(--serif)' not in css
+          assert '--serif:' not in css
+          assert '.reading-body{font:400 var(--reader-font-size)/1.8 var(--reading-font)' in css
+          assert "notesKey" not in reader
+          assert "getProgress(slug)" in reader and "setProgress(slug" in reader
+          books = list(Path('livros').glob('*/index.html'))
+          assert len(books) == 6, books
+          for book in books:
+              page = book.read_text(encoding='utf-8')
+              assert 'class="reflections"' not in page, book
+              assert 'id="personal-notes"' not in page, book
+              assert 'data-notes' not in page, book
+              assert 'data-clear-notes' not in page, book
+              assert re.search(r'<section id="[^"]+" class="reading-section" data-chapter', page), book
+              assert 'data-readable' in page, book
+              assert 'data-reset-progress' in page, book
+          print('Fonte sem serifa e seis livros sem formulário de notas: OK')
           PY
       - name: Conferir áudio ambiente e entrada do leitor
         run: |
