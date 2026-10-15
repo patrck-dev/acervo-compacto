@@ -1,5 +1,6 @@
 import { getPreferences, updatePreferences, read, write } from './storage.js';
 import { initSpeech } from './speech.js';
+import { mountNarrationVolume } from './narration-volume.js';
 
 // Player de áudios estáticos por seção; mantém a Web Speech API como fallback.
 export async function initNarration({ sections, title, toast }) {
@@ -42,6 +43,7 @@ export async function initNarration({ sections, title, toast }) {
   const message = document.querySelector('[data-voice-message]');
   const titles = sections.map(s => s.querySelector('h2')?.textContent.trim() || s.id);
   const audio = new Audio();
+  const narrationVolume = mountNarrationVolume({ player, audio });
   audio.preload = 'metadata';
   audio.playbackRate = Number(getPreferences().rate) || 1;
   let activeSection = 0;
@@ -127,6 +129,7 @@ export async function initNarration({ sections, title, toast }) {
     buttons();
   }
   async function attemptPlay(token) {
+    narrationVolume.resumeAudioContext();
     try {
       await audio.play();
       if (token === sequence) message.textContent = '';

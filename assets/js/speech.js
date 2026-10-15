@@ -1,9 +1,11 @@
 import { getPreferences, updatePreferences } from './storage.js';
+import { mountNarrationVolume } from './narration-volume.js';
 
 export function initSpeech({ sections, title, toast }) {
   const synth = window.speechSynthesis;
   const supported = Boolean(synth && window.SpeechSynthesisUtterance);
   const player = document.getElementById('audio-player');
+  const narrationVolume = mountNarrationVolume({ player });
   const startSection = document.querySelector('[data-speech-section]');
   const startAll = document.querySelector('[data-speech-all]');
   const playPause = document.querySelector('[data-player-playpause]');
@@ -123,6 +125,7 @@ export function initSpeech({ sections, title, toast }) {
     utterance.lang = selectedVoice()?.lang || 'pt-BR';
     if (selectedVoice()) utterance.voice = selectedVoice();
     utterance.rate = Number(rateSelect.value);
+    utterance.volume = narrationVolume.getVolume() / 100;
     utterance.onstart = () => { if (token === runToken) highlight(segment.block); };
     utterance.onend = () => {
       if (token !== runToken || !playing) return;

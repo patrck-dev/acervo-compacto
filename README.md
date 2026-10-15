@@ -87,3 +87,11 @@ O prefixo original de `localStorage` (`biblioteca.existencia.v1.`) foi preservad
 Os cinco estudos ampliados estão em `livros/em-busca-de-sentido`, `livros/sapiens`, `livros/meditacoes`, `livros/sidarta` e `livros/o-mito-de-sisifo`. Cada página mantém o resumo interpretativo original e acrescenta um roteiro detalhado que percorre estrutura e argumentos da obra, além de fontes complementares. `livros/confissoes/` permanece inalterado.
 
 O workflow neural compara hashes de cada seção e gera novos arquivos para passagens alteradas ou acrescentadas. Durante a geração, o player pode utilizar a síntese nativa do navegador como alternativa. Como cada uma das cinco páginas cresceu, a atualização de suas faixas requer uma execução de síntese substancial.
+
+## Música ambiente e amplificação de voz
+
+O arquivo `assets/music-background.mp3` é reproduzido em loop por um miniplayer presente no cabeçalho (flutuante no celular), com mute e volume separados da narração. O volume e o mute são salvos nas preferências locais; a posição da música é retomada ao navegar na mesma aba, quando permitido.
+
+Navegadores podem impedir a reprodução automática com som antes de uma interação. A música tenta começar automaticamente e, caso seja bloqueada, inicia após um clique, toque ou comando de teclado no site. Como as páginas são HTMLs independentes, a troca de livro pode causar breve interrupção na música; a posição é preservada na mesma aba.
+
+Nos livros com MP3 neural, o controle **Volume da voz** vai de 0% a 200%, usando Web Audio API (ganho mais compressor limitador). Valores acima de 100% podem distorcer conforme o volume do arquivo, o dispositivo e o navegador. No fallback Web Speech, o controle vai até 100%, pois o navegador não expõe o fluxo de áudio para amplificação.

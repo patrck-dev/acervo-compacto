@@ -1,0 +1,56 @@
+name: Verificar interface e controles de áudio
+
+on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - 'assets/js/**'
+      - 'assets/css/**'
+      - 'assets/music-background.mp3'
+      - '.github/workflows/verify-audio-ui.yml'
+  pull_request:
+    paths:
+      - 'assets/js/**'
+      - 'assets/css/**'
+      - '.github/workflows/verify-audio-ui.yml'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Checar sintaxe de módulos JavaScript
+        run: |
+          for script in assets/js/*.js; do
+            echo "Validando ${script}"
+            node --input-type=module --check < "$script"
+          done
+      - name: Conferir áudio ambiente e entrada do leitor
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          js = Path('assets/js/main.js').read_text(encoding='utf-8')
+          bg = Path('assets/js/background-music.js').read_text(encoding='utf-8')
+          voice = Path('assets/js/narration-volume.js').read_text(encoding='utf-8')
+          neural = Path('assets/js/audio.js').read_text(encoding='utf-8')
+          native = Path('assets/js/speech.js').read_text(encoding='utf-8')
+          assert Path('assets/music-background.mp3').is_file()
+          assert Path('assets/music-background.mp3').stat().st_size > 100_000
+          assert 'initBackgroundMusic()' in js
+          assert "audio.loop = true" in bg
+          assert "musicMuted" in bg and "musicVolume" in bg
+          assert "createMediaElementSource" in voice
+          assert "createDynamicsCompressor" in voice
+          assert "max = canBoost ? 200 : 100" in voice
+          assert "mountNarrationVolume({ player, audio })" in neural
+          assert "mountNarrationVolume({ player })" in native
+          assert "utterance.volume =" in native
+          for page in [Path('index.html'), *Path('livros').glob('*/index.html')]:
+              assert 'assets/js/main.js' in page.read_text(encoding='utf-8'), page
+          print('Música ambiente, volume de voz e entrada das páginas verificados.')
+          PY
