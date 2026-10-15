@@ -18,7 +18,7 @@ As obras *Meditações*, *Sidarta* e *Em Busca de Sentido* foram retiradas do ca
 ## Recursos de leitura
 
 - Oito páginas independentes em `livros/<slug>/index.html`, com sumário lateral ou recolhível, âncoras, navegação entre seções, questões para reflexão e sínteses finais.
-- Cinco novos estudos sobre cosmologia, com **17 a 18 seções** cada, textos analíticos condensados, referências editoriais e ressalvas sobre teorias controversas ou conhecimentos atualizados após a publicação original; os três estudos anteriores foram preservados.
+- Cinco novos estudos sobre cosmologia, com **17 a 18 seções** e aproximadamente **3.200 a 3.350 palavras** cada, textos analíticos aprofundados e condensados, referências editoriais e ressalvas sobre teorias controversas ou conhecimentos atualizados após a publicação original; os três estudos anteriores foram preservados.
 - Capas editoriais originais em SVG, servidas localmente, sem uso de capas comerciais de terceiros.
 - Página inicial com **uma obra por linha**, sinopses expandidas, barra de progresso por livro e botão individual de retomada.
 - Preferências de tema claro/escuro/automático e tamanho de leitura entre 16 e 26 px, com fontes sem serifa.
