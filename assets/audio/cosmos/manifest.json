@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "engine": "kokoro-v1.0-ptbr-v1",
+  "voice": "pf_dora",
+  "book": "cosmos",
+  "sections": [
+    {
+      "id": "contexto",
+      "title": "Introdução: ciência como aventura da espécie",
+      "file": "contexto.mp3",
+      "sha256": "1969fc44a815edcf46bd5c3b49f379f20186c76ba4a0c8b2391ebbbdbe370366"
+    },
+    {
+      "id": "oceano",
+      "title": "I — As margens do oceano cósmico",
+      "file": "oceano.mp3",
+      "sha256": "5a928bc21015a5008b25edb0ea885aa4a17ce2f33249c23b24a681785393a22b"
+    },
+    {
+      "id": "fuga",
+      "title": "II — Uma voz na fuga cósmica: vida e evolução",
+      "file": "fuga.mp3",
+      "sha256": "d30bd813d196408d89f3fdc1d3031ed59bd39eb5c594a3d99a8f8c95086d113a"
+    },
+    {
+      "id": "harmonia",
+      "title": "III — A harmonia dos mundos: Kepler e o nascimento da ciência",
+      "file": "harmonia.mp3",
+      "sha256": "2a65d23fef228df540fa51948ad13f5f6ebee79ae22aca6cb13c4a28819e057a"
+    },
+    {
+      "id": "ceu-inferno",
+      "title": "IV — Céu e inferno: o efeito estufa e os planetas",
+      "file": "ceu-inferno.mp3",
+      "sha256": "4b61b7d175627f33b06ef4b329f144284385b595d3da9e7702dc4b0f34d10e42"
+    },
+    {
+      "id": "marte",
+      "title": "V — Blues para um planeta vermelho: Marte e a imaginação",
+      "file": "marte.mp3",
+      "sha256": "bea892a1f9d2cd86d5f8ec9c2b500121dd745f7a531b56bca2c16081a6a51b83"
+    },
+    {
+      "id": "viajantes",
+      "title": "VI — Histórias de viajantes: missões e descobertas",
+      "file": "viajantes.mp3",
+      "sha256": "bc55fa36bca17e467241ca3fc774a4f6d8f5cd2429f6962e64f09e96aca8c424"
+    },
+    {
+      "id": "coluna",
+      "title": "VII — A espinha dorsal da noite: de mitos à observação",
+      "file": "coluna.mp3",
+      "sha256": "c79b181a30151dca2a7961ab8debb6c4ca2992340d19560cbc8d85507402ac21"
+    },
+    {
+      "id": "espaco-tempo",
+      "title": "VIII — Viagens no espaço e no tempo",
+      "file": "espaco-tempo.mp3",
+      "sha256": "927a366cc5cd1041aae0588a8752f5fcd37f2379ac82b326ccad241011806df2"
+    },
+    {
+      "id": "estrelas",
+      "title": "IX — As vidas das estrelas",
+      "file": "estrelas.mp3",
+      "sha256": "b50654788ca63cdab1703617edede979ef869bba60295fc277fa4f7ecbcad71c"
+    },
+    {
+      "id": "eternidade",
+      "title": "X — À beira da eternidade: galáxias e cosmologia",
+      "file": "eternidade.mp3",
+      "sha256": "d940b85ffacef835d3f237e7b5253ed12bd25e51c91c7d61e856ce9dfed3b161"
+    },
+    {
+      "id": "memoria",
+      "title": "XI — A persistência da memória: cérebro, genes e cultura",
+      "file": "memoria.mp3",
+      "sha256": "72a7cb37e24b939a65b07aa5bd95e1d5abe09898ef66157366dae6beb0c4375b"
+    },
+    {
+      "id": "enciclopedia",
+      "title": "XII — Enciclopédia galáctica: inteligência extraterrestre",
+      "file": "enciclopedia.mp3",
+      "sha256": "74e22da70c88419db79baee15157a919c20159e8f13b3dc8d0cb848c4ceb47ad"
+    },
+    {
+      "id": "terra",
+      "title": "XIII — Quem fala pela Terra?",
+      "file": "terra.mp3",
+      "sha256": "6e760db345dfeeb6513da903d04f548846ab34d765948b257452d020a1a12ae7"
+    },
+    {
+      "id": "criticas",
+      "title": "Como ler um clássico científico sem congelá-lo em 1980",
+      "file": "criticas.mp3",
+      "sha256": "3eb304361ddfd5e1c19e51df13bc02c432da6aab841c803cf6f1a08472db5bed"
+    },
+    {
+      "id": "conexoes",
+      "title": "Cosmos em diálogo com outros autores",
+      "file": "conexoes.mp3",
+      "sha256": "b7bb75e1e788a3ec6ee2db577df439469e8b55191edda012a7fa75ccc470349d"
+    },
+    {
+      "id": "perguntas",
+      "title": "Oito perguntas para reflexão",
+      "file": "perguntas.mp3",
+      "sha256": "fb8074bf4b06dc6b8d123f43f6bddc23ed03c38b5d1494fdd64e247ba08c2c77"
+    },
+    {
+      "id": "sintese",
+      "title": "Síntese das cinco ideias centrais",
+      "file": "sintese.mp3",
+      "sha256": "e48ce0e43245311d0aa775302d66f11217a12d037bfe7eb5543a246803e6a1ac"
+    }
+  ]
+}
