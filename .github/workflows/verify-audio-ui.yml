@@ -7,7 +7,9 @@ on:
     paths:
       - 'assets/js/**'
       - 'assets/css/**'
+      - 'index.html'
       - 'assets/music-background.mp3'
+      - 'index.html'
       - '.github/workflows/verify-audio-ui.yml'
   pull_request:
     paths:
@@ -30,6 +32,29 @@ jobs:
             echo "Validando ${script}"
             node --input-type=module --check < "$script"
           done
+      - name: Conferir catálogo e retomada individual
+        run: |
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          import re
+
+          source = Path('index.html').read_text(encoding='utf-8')
+          script = Path('assets/js/main.js').read_text(encoding='utf-8')
+          css = Path('assets/css/styles.css').read_text(encoding='utf-8')
+          books = re.findall(r'<article class="book-card" data-book-card="([^"]+)"[\s\S]*?</article>', source)
+          assert len(books) == len(set(books)) == 6, books
+          assert source.count('class="book-cover-link"') == 6
+          assert source.count('class="book-summary"') == 6
+          assert source.count('data-resume-link') == 6
+          assert source.count('role="progressbar"') == 6
+          assert not re.search(r'data-continue-banner', source)
+          assert 'getProgress(book.dataset.bookCard)' in script
+          assert "querySelector('[data-resume-link]')" in script
+          assert 'grid-template-columns:minmax(0,1fr)' in css
+          assert 'book-summary p' in css
+          print('Seis livros, uma obra por linha e retomada individual: OK')
+          PY
       - name: Conferir áudio ambiente e entrada do leitor
         run: |
           python3 - <<'PY'

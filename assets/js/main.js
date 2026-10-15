@@ -1,4 +1,4 @@
-import { persistent, getPreferences, updatePreferences, getProgress, read } from './storage.js';
+import { persistent, getPreferences, updatePreferences, getProgress } from './storage.js';
 import { initReader } from './reader.js';
 import { initBackgroundMusic } from './background-music.js';
 
@@ -54,21 +54,18 @@ if (!persistent) {
 
 if (document.body.dataset.page === 'reader') initReader({ toast });
 if (document.body.dataset.page === 'home') {
-  const books = [...document.querySelectorAll('[data-book-card]')];
-  for (const book of books) {
+  document.querySelectorAll('[data-book-card]').forEach(book => {
     const progress = getProgress(book.dataset.bookCard);
-    const percent = Math.round(progress?.percent || 0);
-    book.querySelector('[data-progress-label]').textContent = `${percent}% lido`;
-    book.querySelector('[data-progress-fill]').style.width = `${percent}%`;
-  }
-  const last = read('lastOpened');
-  const card = books.find(book => book.dataset.bookCard === last);
-  const p = last && getProgress(last);
-  if (card) {
-    const banner = document.querySelector('[data-continue-banner]');
-    banner.querySelector('[data-continue-title]').textContent = card.querySelector('h3').textContent;
-    banner.querySelector('a').href = card.querySelector('.book-link').getAttribute('href');
-    banner.querySelector('[data-continue-percent]').textContent = `${Math.round(p?.percent || 0)}% concluído`;
-    banner.classList.add('show');
-  }
+    const stored = Number(progress?.percent);
+    const percent = Number.isFinite(stored) ? Math.min(100, Math.max(0, Math.round(stored))) : 0;
+    const started = Number.isFinite(stored) && stored > .5;
+    const title = book.querySelector('h3')?.textContent.trim() || 'esta obra';
+    book.querySelector('[data-progress-label]').textContent =
+      started ? (percent >= 100 ? 'Leitura concluída' : percent + '% concluído') : 'Ainda não iniciado';
+    book.querySelector('[data-progress-fill]').style.width = percent + '%';
+    book.querySelector('[role="progressbar"]').setAttribute('aria-valuenow', String(percent));
+    const link = book.querySelector('[data-resume-link]');
+    link.querySelector('[data-resume-text]').textContent = started ? 'Retomar leitura' : 'Começar leitura';
+    link.setAttribute('aria-label', (started ? 'Retomar ' : 'Começar ') + 'a leitura de ' + title);
+  });
 }
