@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "engine": "kokoro-v1.0-ptbr-v1",
+  "voice": "pf_dora",
+  "book": "uma-breve-historia-do-tempo",
+  "sections": [
+    {
+      "id": "contexto",
+      "title": "Introdução: ciência de fronteira para leitores não especialistas",
+      "file": "contexto.mp3",
+      "sha256": "41638150931345290a896442e93905d7e612118c8d6e1d0ae5dd7be1561b7a0e"
+    },
+    {
+      "id": "imagem",
+      "title": "Capítulo 1 — Nossa imagem do Universo",
+      "file": "imagem.mp3",
+      "sha256": "87b914d250d06ffdf6aef34263e0f653d3f306d600f4735f854a989d4dbdc549"
+    },
+    {
+      "id": "espaco",
+      "title": "Capítulo 2 — Espaço e tempo segundo a relatividade",
+      "file": "espaco.mp3",
+      "sha256": "be8923c03c77a82f504b54e0d2ccdeee73fbba0d3e6b342003341b27051f2ae2"
+    },
+    {
+      "id": "expansao",
+      "title": "Capítulo 3 — O Universo em expansão",
+      "file": "expansao.mp3",
+      "sha256": "78becba4cbd8ebc5ff22d7f0da5c63c43325190af630bdd6b2379d9ddc32525f"
+    },
+    {
+      "id": "incerteza",
+      "title": "Capítulo 4 — O princípio da incerteza",
+      "file": "incerteza.mp3",
+      "sha256": "1c222271849412d8f22a907d357937359091a75aa0c602a2d52359be33c9f907"
+    },
+    {
+      "id": "particulas",
+      "title": "Capítulo 5 — Partículas elementares e forças da natureza",
+      "file": "particulas.mp3",
+      "sha256": "4b66edeb6365084c7ae402a2c2042ffa1be65d22ffaeecac221cd79d04c2d847"
+    },
+    {
+      "id": "buracos",
+      "title": "Capítulo 6 — Buracos negros e horizontes de eventos",
+      "file": "buracos.mp3",
+      "sha256": "bd3fc3361d7798a5590726729dcc1daddd22515dd916663b3348834c88def568"
+    },
+    {
+      "id": "radiacao",
+      "title": "Capítulo 7 — Buracos negros não são tão negros",
+      "file": "radiacao.mp3",
+      "sha256": "ace076c4c8e46707b5a1166625c26e79576b7117927578510129b069d10853dd"
+    },
+    {
+      "id": "origem",
+      "title": "Capítulo 8 — Origem e destino do Universo",
+      "file": "origem.mp3",
+      "sha256": "594113ee890732492e005457758520c5d0492d50d7de73e61392c678b64fca0f"
+    },
+    {
+      "id": "seta",
+      "title": "Capítulo 9 — A seta do tempo",
+      "file": "seta.mp3",
+      "sha256": "445bb63bcebfc0fb505ea6a7df9a65ec4b40bb9481776fab948c0878e8404354"
+    },
+    {
+      "id": "unificacao",
+      "title": "Capítulo 10 — A unificação da física",
+      "file": "unificacao.mp3",
+      "sha256": "eaca45b28653d293c43eb24719a8aaa5d57cf67bb67329378117cb11f53ae9c6"
+    },
+    {
+      "id": "conclusao",
+      "title": "Capítulo 11 — Conclusão: o alcance e os limites de uma teoria",
+      "file": "conclusao.mp3",
+      "sha256": "ed3e3a0a1f16a177a553a04b3a73368eaa3403e2f5863db76e24ba4f148bc9a8"
+    },
+    {
+      "id": "atualizacao",
+      "title": "O que mudou desde 1988 e o que permanece relevante",
+      "file": "atualizacao.mp3",
+      "sha256": "84cdaf4281308e012ab8c47c28eb051612a24d971f48706f40430ce0d6cb1b38"
+    },
+    {
+      "id": "criticas",
+      "title": "Limitações: simplificações, metáforas e questões filosóficas",
+      "file": "criticas.mp3",
+      "sha256": "1a6ae653863af33b8e7e3abf43b91d87c268f13972fdf0523ae0ef5cb3a65e0d"
+    },
+    {
+      "id": "conexoes",
+      "title": "Conexões com os outros títulos",
+      "file": "conexoes.mp3",
+      "sha256": "21daee95d9245d45e72c0efbbe7fa0c76517d24d43bdd5895f4317a5a02983d4"
+    },
+    {
+      "id": "perguntas",
+      "title": "Oito perguntas para reflexão",
+      "file": "perguntas.mp3",
+      "sha256": "714f44c054bcac9662f00452c15b1f39d8a7ffc9c4039f2b3da04f42eb115b10"
+    },
+    {
+      "id": "sintese",
+      "title": "Síntese das cinco ideias centrais",
+      "file": "sintese.mp3",
+      "sha256": "8452d071cb31c4ccbb27247ee2cbadca42b62780e6891e00d0ee249b93c2ffb0"
+    }
+  ]
+}
