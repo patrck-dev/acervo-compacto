@@ -1,4 +1,4 @@
-# Biblioteca da Existência
+# Acervo Compacto
 
 Site editorial inteiramente estático, em português brasileiro, com seis ensaios originais sobre filosofia, existência, psicologia e história. Funciona diretamente no GitHub Pages **sem build, Node.js, npm, banco de dados, autenticação ou backend**.
 
@@ -75,3 +75,9 @@ A branch `feat/narracao-neural` inclui um gerador de MP3s com Kokoro pt-BR em Gi
 ## Nova obra: Confissões (Santo Agostinho)
 
 Na branch de desenvolvimento `feat/narracao-neural`, a biblioteca inclui `livros/confissoes/index.html`, com estudo original dos treze livros, leituras críticas e ferramentas de reflexão. A narração é gerada automaticamente pelo workflow ao detectar mudanças nesse HTML. Cada seção é um MP3; enquanto a geração não termina, o player utiliza a voz nativa do navegador. A voz neural e os manifestos são publicados na mesma branch, e o Cloudflare Workers mantém uma URL de preview independente da produção.
+
+## Identidade editorial e endereços
+
+A marca do site é **Acervo Compacto**, com identificador desejado `acervo-compacto`. A alteração de nome no conteúdo não renomeia automaticamente o repositório GitHub nem o Worker conectado ao Cloudflare; essas operações devem ser coordenadas separadamente para preservar as implantações e os links existentes.
+
+O prefixo original de `localStorage` (`biblioteca.existencia.v1.`) foi preservado intencionalmente para manter anotações, preferências e progresso já registrados nos navegadores dos leitores.

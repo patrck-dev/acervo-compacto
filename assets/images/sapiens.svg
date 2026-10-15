@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 440" role="img" aria-labelledby="t d">
 <title id="t">Capa editorial de Sapiens</title><desc id="d">Representação tipográfica e geométrica original.</desc>
 <rect width="300" height="440" fill="#D1BEA3"/><rect x="15" y="15" width="270" height="410" fill="none" stroke="#403A30" stroke-opacity=".3"/>
-<text x="35" y="45" font-size="9" letter-spacing="2.3" fill="#403A30" font-family="Arial,sans-serif">BIBLIOTECA DA EXISTÊNCIA</text>
+<text x="35" y="45" font-size="9" letter-spacing="2.3" fill="#403A30" font-family="Arial,sans-serif">ACERVO COMPACTO</text>
 <g stroke="#403A30" stroke-width="1.5" opacity=".75"><path d="M91 160 150 112 210 155 194 231 131 254 78 208Z"/><path d="M91 160 194 231M150 112 131 254M210 155 78 208"/></g><circle cx="91" cy="160" r="8" fill="#403A30"/><circle cx="150" cy="112" r="11" fill="#403A30"/><circle cx="210" cy="155" r="7" fill="#403A30"/><circle cx="194" cy="231" r="10" fill="#403A30"/><circle cx="131" cy="254" r="8" fill="#403A30"/><circle cx="78" cy="208" r="5" fill="#403A30"/>
 <text x="35" y="348" font-size="35" font-family="Georgia,serif" letter-spacing="-1" fill="#403A30">SAPIENS</text>
 <text x="35" y="389" font-size="11" fill="#403A30" font-family="Arial,sans-serif" letter-spacing="1.2">YUVAL NOAH HARARI</text>

@@ -33,7 +33,7 @@ Observação: validações estáticas e via HTTP não substituem testes manuais 
 
 ## Verificações já executadas nesta entrega — 13/10/2026
 
-- [x] Os seis HTMLs foram solicitados por HTTP e responderam com sucesso; as 45 referências internas de CSS, JavaScript, SVG e navegação foram verificadas também sob `/biblioteca-da-existencia/`, sem 404.
+- [x] Os seis HTMLs foram solicitados por HTTP e responderam com sucesso; as 45 referências internas de CSS, JavaScript, SVG e navegação foram verificadas também sob `/nome-do-repositorio/`, sem 404.
 - [x] As seis obras têm dez seções, oito questões finais, cinco ideias de síntese, IDs estáveis e conteúdo editorial completo de aproximadamente 2.061 a 2.245 palavras, conforme contagem dos arquivos de origem.
 - [x] Os cinco módulos JavaScript passaram pela verificação sintática do Node usado **apenas no ambiente de teste** (não é dependência do produto).
 - [x] Foram renderizados os HTMLs com estilos e scripts em Chromium no ambiente de teste, inclusive layouts móveis e desktop. Não houve rolagem horizontal não intencional nos tamanhos de 320 a 1440 px inspecionados.
