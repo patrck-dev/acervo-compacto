@@ -11,8 +11,7 @@ sintetiza a voz brasileira e cria `assets/audio/<slug>/manifest.json` e
 
 1. Adicione um HTML em `livros/<slug>/index.html` com IDs de seção únicos e
    texto marcado com `data-readable`.
-2. Faça push para uma branch configurada no workflow (inicialmente `main` ou
-   `feat/narracao-neural`). A execução usa runners hospedados pelo GitHub.
+2. Faça push para qualquer branch do próprio repositório. A execução usa runners hospedados pelo GitHub.
 3. O workflow roda testes e só regrava arquivos cujo hash da seção (incluindo
    voz e versão do gerador) mudou. A versão da locução está no manifesto.
 4. A execução registra os MP3s e manifestos na mesma branch; revise os áudios
@@ -39,12 +38,13 @@ sintetiza a voz brasileira e cria `assets/audio/<slug>/manifest.json` e
 
 No modo GitHub Pages **Deploy from a branch**, um commit criado pelo workflow
 com `GITHUB_TOKEN` **não dispara sozinho uma nova publicação** do Pages.
-Durante o desenvolvimento, gere e confira o áudio na branch e depois faça
-merge normal para `main`, que disparará a publicação do conteúdo versionado.
-Para uma operação futura em que novos livros são enviados **diretamente a
-`main` sem revisão**, precisaremos criar um job de publicação por Actions e
-mudar uma única vez `Settings > Pages > Source` para **GitHub Actions**.
-Isso não transforma o site em uma SPA nem requer build de frontend.
+O workflow **já inclui** um job de publicação que roda apenas em `main`,
+ após terminar a geração. **Antes do merge**, configure uma única vez
+`Settings > Pages > Source` para **GitHub Actions**. Na branch de desenvolvimento,
+o workflow só gera os MP3s e registra os arquivos; não publica no site principal.
+Isso não transforma o site em SPA nem exige build do frontend.
+Se o modo `Deploy from a branch` for mantido, o job de publicação falhará
+e commits automáticos não dispararão a publicação do áudio.
 
 ## Teste sem baixar o modelo
 
